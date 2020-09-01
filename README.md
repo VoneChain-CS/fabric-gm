@@ -1,4 +1,4 @@
-这是基于fabric-v2.2.0修改的支持国密算法的fabric。
+这是基于fabric-v2.2.0修改的支持国密算法的fabric，已通过命令行完成网络部署以及链码操作测试。
 
 版权所有 上海旺链信息科技有限公司(http://www.vonechain.com)。
 
