@@ -1,0 +1,6 @@
+# github.com/inconshreveable/mousetrap v1.0.0
+## explicit
+github.com/inconshreveable/mousetrap
+# github.com/spf13/pflag v1.0.5
+## explicit
+github.com/spf13/pflag
