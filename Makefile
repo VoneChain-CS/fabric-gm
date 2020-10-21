@@ -64,7 +64,7 @@ PROJECT_VERSION=$(BASE_VERSION)-snapshot-$(EXTRA_VERSION)
 # for two digit references to most recent baseos and ccenv patch releases
 TWO_DIGIT_VERSION = $(shell echo $(BASE_VERSION) | cut -d '.' -f 1,2)
 
-PKGNAME = github.com/hyperledger/fabric
+PKGNAME = github.com/VoneChain-CS/fabric-gm
 ARCH=$(shell go env GOARCH)
 MARCH=$(shell go env GOOS)-$(shell go env GOARCH)
 

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/gm"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/gm"
 )
 
 const (

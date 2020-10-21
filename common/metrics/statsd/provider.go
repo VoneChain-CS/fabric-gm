@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package statsd
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics/internal/namer"
 	"github.com/go-kit/kit/metrics/statsd"
-	"github.com/hyperledger/fabric/common/metrics"
-	"github.com/hyperledger/fabric/common/metrics/internal/namer"
 )
 
 const defaultFormat = "%{#fqname}"

@@ -7,17 +7,17 @@ SPDX-License-Identifier: Apache-2.0
 package protoext
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/protoext/commonext"
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/protoext/ledger/rwsetext"
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/protoext/mspext"
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/protoext/ordererext"
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/protoext/peerext"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
 	"github.com/hyperledger/fabric-protos-go/msp"
 	"github.com/hyperledger/fabric-protos-go/orderer"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/tools/protolator/protoext/commonext"
-	"github.com/hyperledger/fabric/common/tools/protolator/protoext/ledger/rwsetext"
-	"github.com/hyperledger/fabric/common/tools/protolator/protoext/mspext"
-	"github.com/hyperledger/fabric/common/tools/protolator/protoext/ordererext"
-	"github.com/hyperledger/fabric/common/tools/protolator/protoext/peerext"
 )
 
 // Docorate will add additional capabilities to some protobuf messages that

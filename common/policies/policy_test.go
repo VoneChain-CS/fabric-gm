@@ -12,12 +12,12 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/common/policies/mocks"
+	mspi "github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/golang/protobuf/proto"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/msp"
-	"github.com/hyperledger/fabric/common/policies/mocks"
-	mspi "github.com/hyperledger/fabric/msp"
-	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

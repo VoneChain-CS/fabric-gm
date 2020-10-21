@@ -14,9 +14,9 @@ import (
 	"io/ioutil"
 	"reflect"
 
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/protoext"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/common/tools/protolator/protoext"
 )
 
 // MostlyDeterministicMarshal is _NOT_ the function you are looking for.

@@ -6,10 +6,10 @@ SPDX-License-Identifier: Apache-2.0
 package handlers_test
 
 import (
-	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/idemix/handlers/mock"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers/mock"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"

@@ -13,9 +13,9 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/metadata"
 	docker "github.com/fsouza/go-dockerclient"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/common/metadata"
 	"github.com/spf13/viper"
 )
 

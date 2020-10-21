@@ -17,7 +17,7 @@ import (
 
 func TestMissingArguments(t *testing.T) {
 	gt := NewGomegaWithT(t)
-	discover, err := Build("github.com/hyperledger/fabric/cmd/discover")
+	discover, err := Build("github.com/VoneChain-CS/fabric-gm/cmd/discover")
 	gt.Expect(err).NotTo(HaveOccurred())
 	defer CleanupBuildArtifacts()
 

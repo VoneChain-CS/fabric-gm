@@ -6,8 +6,8 @@ SPDX-License-Identifier: Apache-2.0
 package bridge
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/idemix"
 	"github.com/hyperledger/fabric-amcl/amcl/FP256BN"
-	"github.com/hyperledger/fabric/idemix"
 )
 
 // Big encapsulate an amcl big integer

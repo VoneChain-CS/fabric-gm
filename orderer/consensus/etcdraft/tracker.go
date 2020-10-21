@@ -10,9 +10,9 @@ import (
 	"sync/atomic"
 
 	"github.com/hyperledger/fabric-protos-go/orderer/etcdraft"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/common/metrics"
-	"github.com/hyperledger/fabric/protoutil"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"go.etcd.io/etcd/raft"
 )
 

@@ -6,8 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 package handlers
 
 import (
-
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
 	"github.com/tjfoc/gmsm/sm2"
 )
 

@@ -19,9 +19,9 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/factory"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
 	version "github.com/hashicorp/go-version"
-	"github.com/hyperledger/fabric/bccsp/factory"
-	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/mitchellh/mapstructure"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"

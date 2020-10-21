@@ -16,8 +16,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/hyperledger/fabric/common/flogging/floggingtest"
-	"github.com/hyperledger/fabric/internal/pkg/comm"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging/floggingtest"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
 	"github.com/stretchr/testify/assert"
 )
 

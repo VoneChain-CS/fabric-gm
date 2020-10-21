@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/internal/peer/common"
-	"github.com/hyperledger/fabric/internal/peer/packaging"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/internal/peer/common"
+	"github.com/VoneChain-CS/fabric-gm/internal/peer/packaging"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

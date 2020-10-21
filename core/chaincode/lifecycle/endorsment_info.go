@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package lifecycle
 
 import (
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/scc"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/scc"
 
 	"github.com/pkg/errors"
 )

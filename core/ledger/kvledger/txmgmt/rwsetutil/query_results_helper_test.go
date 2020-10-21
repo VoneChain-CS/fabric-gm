@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/core/ledger/internal/version"
 	"github.com/stretchr/testify/assert"
 )
 

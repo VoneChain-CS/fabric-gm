@@ -19,7 +19,7 @@ source ./common.sh
 # For the details of test specific parameters, refer to the documentation in 'go' files for the tests
 #######################################################################################################
 
-PKG_NAME="github.com/hyperledger/fabric/core/ledger/kvledger/benchmark/experiments"
+PKG_NAME="github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/benchmark/experiments"
 
 function setCommonTestParams {
   TEST_PARAMS="-DataDir=$DataDir, -NumChains=$NumChains, -NumParallelTxPerChain=$NumParallelTxPerChain, -NumWritesPerTx=$NumWritesPerTx, -NumReadsPerTx=$NumReadsPerTx, -BatchSize=$BatchSize, -NumKVs=$NumKVs, -KVSize=$KVSize, -UseJSONFormat=$UseJSONFormat"

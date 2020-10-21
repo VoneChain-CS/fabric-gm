@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/msp"
+	"github.com/VoneChain-CS/fabric-gm/msp"
 )
 
 type ChannelCapabilities struct {

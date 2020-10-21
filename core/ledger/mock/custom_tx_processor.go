@@ -4,8 +4,8 @@ package mock
 import (
 	"sync"
 
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric/core/ledger"
 )
 
 type CustomTxProcessor struct {

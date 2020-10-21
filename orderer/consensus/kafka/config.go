@@ -11,7 +11,7 @@ import (
 	tls "github.com/tjfoc/gmtls"
 	"github.com/tjfoc/gmsm/sm2"
 
-	localconfig "github.com/hyperledger/fabric/orderer/common/localconfig"
+	localconfig "github.com/VoneChain-CS/fabric-gm/orderer/common/localconfig"
 
 	"github.com/Shopify/sarama"
 )

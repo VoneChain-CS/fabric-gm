@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hyperledger/fabric/common/metrics/disabled"
-	"github.com/hyperledger/fabric/core/config/configtest"
-	config "github.com/hyperledger/fabric/orderer/common/localconfig"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics/disabled"
+	"github.com/VoneChain-CS/fabric-gm/core/config/configtest"
+	config "github.com/VoneChain-CS/fabric-gm/orderer/common/localconfig"
 	"github.com/stretchr/testify/assert"
 )
 

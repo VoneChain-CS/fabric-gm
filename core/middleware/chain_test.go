@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/hyperledger/fabric/core/middleware"
+	"github.com/VoneChain-CS/fabric-gm/core/middleware"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

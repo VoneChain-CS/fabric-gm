@@ -12,8 +12,8 @@ import (
 	"reflect"
 	"testing"
 
-	mocks2 "github.com/hyperledger/fabric/bccsp/mocks"
-	"github.com/hyperledger/fabric/bccsp/sw/mocks"
+	mocks2 "github.com/VoneChain-CS/fabric-gm/bccsp/mocks"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

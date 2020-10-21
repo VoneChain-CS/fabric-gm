@@ -15,7 +15,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
 )
 
 type ExitFunc func(error)

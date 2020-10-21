@@ -28,6 +28,14 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/common/crypto"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/util"
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
+	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	docker "github.com/fsouza/go-dockerclient"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
@@ -35,14 +43,6 @@ import (
 	mspp "github.com/hyperledger/fabric-protos-go/msp"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/common/crypto"
-	"github.com/hyperledger/fabric/core/ledger/util"
-	"github.com/hyperledger/fabric/integration/nwo"
-	"github.com/hyperledger/fabric/integration/nwo/commands"
-	"github.com/hyperledger/fabric/internal/pkg/comm"
-	"github.com/hyperledger/fabric/msp"
-	"github.com/hyperledger/fabric/protoutil"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"
 	"github.com/tedsuo/ifrit"
@@ -92,7 +92,7 @@ var _ bool = Describe("PrivateData", func() {
 				Chaincode: nwo.Chaincode{
 					Name:    "marblesp",
 					Version: "1.0",
-					Path:    "github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd",
+					Path:    "github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd",
 					Ctor:    `{"Args":["init"]}`,
 					Policy:  `OR ('Org1MSP.member','Org2MSP.member', 'Org3MSP.member')`,
 					// collections_config1.json defines the access as follows:
@@ -115,7 +115,7 @@ var _ bool = Describe("PrivateData", func() {
 				Chaincode: nwo.Chaincode{
 					Name:              "marblespHighRequiredPeerCount",
 					Version:           "1.0",
-					Path:              "github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd",
+					Path:              "github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd",
 					Ctor:              `{"Args":["init"]}`,
 					Policy:            `OR ('Org1MSP.member','Org2MSP.member', 'Org3MSP.member')`,
 					CollectionsConfig: collectionConfig("collections_config8_high_requiredPeerCount.json"),
@@ -149,7 +149,7 @@ var _ bool = Describe("PrivateData", func() {
 					Chaincode: nwo.Chaincode{
 						Name:    "marblesp",
 						Version: "1.0",
-						Path:    "github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd",
+						Path:    "github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd",
 						Ctor:    `{"Args":["init"]}`,
 						Policy:  `OR ('Org1MSP.member','Org2MSP.member', 'Org3MSP.member')`,
 						// collections_config1.json defines the access as follows:
@@ -218,7 +218,7 @@ var _ bool = Describe("PrivateData", func() {
 				Chaincode: nwo.Chaincode{
 					Name:              "marblesp",
 					Version:           "1.0",
-					Path:              "github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd",
+					Path:              "github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd",
 					Ctor:              `{"Args":["init"]}`,
 					Policy:            `OR ('Org1MSP.member','Org2MSP.member', 'Org3MSP.member')`,
 					CollectionsConfig: filepath.Join("testdata", "collection_configs", "collections_config1.json"),
@@ -303,7 +303,7 @@ var _ bool = Describe("PrivateData", func() {
 			chaincode := nwo.Chaincode{
 				Name:              "marblesp",
 				Version:           "1.0",
-				Path:              "github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd",
+				Path:              "github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd",
 				Ctor:              `{"Args":["init"]}`,
 				Policy:            `OR ('Org1MSP.member','Org2MSP.member', 'Org3MSP.member')`,
 				CollectionsConfig: filepath.Join("testdata", "collection_configs", "collections_config1.json")}
@@ -410,7 +410,7 @@ var _ bool = Describe("PrivateData", func() {
 			legacyChaincode = nwo.Chaincode{
 				Name:    "marblesp",
 				Version: "1.0",
-				Path:    "github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd",
+				Path:    "github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd",
 				Ctor:    `{"Args":["init"]}`,
 				Policy:  `OR ('Org1MSP.member','Org2MSP.member', 'Org3MSP.member')`,
 				// collections_config1.json defines the access as follows:
@@ -422,7 +422,7 @@ var _ bool = Describe("PrivateData", func() {
 			newLifecycleChaincode = nwo.Chaincode{
 				Name:              "marblesp",
 				Version:           "1.0",
-				Path:              components.Build("github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd"),
+				Path:              components.Build("github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd"),
 				Lang:              "binary",
 				PackageFile:       filepath.Join(network.RootDir, "marbles-pvtdata.tar.gz"),
 				Label:             "marbles-private-20",
@@ -775,7 +775,7 @@ var _ bool = Describe("PrivateData", func() {
 			newLifecycleChaincode = nwo.Chaincode{
 				Name:              "marblesp",
 				Version:           "1.0",
-				Path:              components.Build("github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd"),
+				Path:              components.Build("github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd"),
 				Lang:              "binary",
 				PackageFile:       filepath.Join(network.RootDir, "marbles-pvtdata.tar.gz"),
 				Label:             "marbles-private-20",

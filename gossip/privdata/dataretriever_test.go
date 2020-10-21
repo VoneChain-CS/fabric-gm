@@ -10,13 +10,13 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	privdatacommon "github.com/VoneChain-CS/fabric-gm/gossip/privdata/common"
+	"github.com/VoneChain-CS/fabric-gm/gossip/privdata/mocks"
 	gossip2 "github.com/hyperledger/fabric-protos-go/gossip"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/hyperledger/fabric-protos-go/transientstore"
-	"github.com/hyperledger/fabric/core/ledger"
-	privdatacommon "github.com/hyperledger/fabric/gossip/privdata/common"
-	"github.com/hyperledger/fabric/gossip/privdata/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

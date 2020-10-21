@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/hyperledger/fabric/internal/peer/common"
-	"github.com/hyperledger/fabric/protoutil"
+	"github.com/VoneChain-CS/fabric-gm/internal/peer/common"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/spf13/cobra"
 )
 

@@ -26,8 +26,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/utils"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/utils"
 	"github.com/tjfoc/gmsm/sm2"
 	"github.com/tjfoc/gmsm/sm4"
 )
@@ -216,9 +216,7 @@ func (ks *fileBasedKeyStore) searchKeystoreForSKI(ski []byte) (k bccsp.Key, err 
 			continue
 		}
 
-
 		k = &gmsm2PrivateKey{key}
-
 
 		if !bytes.Equal(k.SKI(), ski) {
 			continue

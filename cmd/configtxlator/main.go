@@ -14,6 +14,11 @@ import (
 	"os"
 	"reflect"
 
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator"
+	"github.com/VoneChain-CS/fabric-gm/internal/configtxlator/metadata"
+	"github.com/VoneChain-CS/fabric-gm/internal/configtxlator/rest"
+	"github.com/VoneChain-CS/fabric-gm/internal/configtxlator/update"
 	"github.com/golang/protobuf/proto"
 	_ "github.com/hyperledger/fabric-protos-go/common"
 	cb "github.com/hyperledger/fabric-protos-go/common" // Import these to register the proto types
@@ -21,11 +26,6 @@ import (
 	_ "github.com/hyperledger/fabric-protos-go/orderer"
 	_ "github.com/hyperledger/fabric-protos-go/orderer/etcdraft"
 	_ "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/common/tools/protolator"
-	"github.com/hyperledger/fabric/internal/configtxlator/metadata"
-	"github.com/hyperledger/fabric/internal/configtxlator/rest"
-	"github.com/hyperledger/fabric/internal/configtxlator/update"
 
 	"github.com/gorilla/handlers"
 	"github.com/pkg/errors"

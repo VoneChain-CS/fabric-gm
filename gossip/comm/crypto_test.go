@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/VoneChain-CS/fabric-gm/gossip/util"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
-	"github.com/hyperledger/fabric/gossip/util"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

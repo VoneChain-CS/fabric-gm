@@ -11,14 +11,14 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/common/ledger/blkstorage"
-	"github.com/hyperledger/fabric/common/metrics/disabled"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/bookkeeping"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/privacyenabledstate"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/txmgr"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/txmgr/lockbasedtxmgr"
-	"github.com/hyperledger/fabric/core/ledger/mock"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/blkstorage"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics/disabled"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/bookkeeping"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/privacyenabledstate"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/txmgr"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/txmgr/lockbasedtxmgr"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/mock"
 	"github.com/stretchr/testify/assert"
 )
 

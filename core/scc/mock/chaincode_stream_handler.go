@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/core/container/ccintf"
+	"github.com/VoneChain-CS/fabric-gm/core/container/ccintf"
 )
 
 type ChaincodeStreamHandler struct {

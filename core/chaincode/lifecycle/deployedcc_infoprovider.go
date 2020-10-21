@@ -11,16 +11,16 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/VoneChain-CS/fabric-gm/common/policydsl"
+	"github.com/VoneChain-CS/fabric-gm/common/util"
+	validationState "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api/state"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/peer"
+	"github.com/VoneChain-CS/fabric-gm/gossip/privdata"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/policydsl"
-	"github.com/hyperledger/fabric/common/util"
-	validationState "github.com/hyperledger/fabric/core/handlers/validation/api/state"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/peer"
-	"github.com/hyperledger/fabric/gossip/privdata"
-	"github.com/hyperledger/fabric/protoutil"
 
 	"github.com/pkg/errors"
 )

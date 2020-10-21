@@ -15,10 +15,10 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	etcdraftproto "github.com/hyperledger/fabric-protos-go/orderer/etcdraft"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/common/crypto/tlsgen"
-	"github.com/hyperledger/fabric/orderer/common/cluster"
-	"github.com/hyperledger/fabric/protoutil"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/common/crypto/tlsgen"
+	"github.com/VoneChain-CS/fabric-gm/orderer/common/cluster"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/stretchr/testify/assert"
 )
 

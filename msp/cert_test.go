@@ -21,15 +21,15 @@ import (
 	"crypto/rand"
 	"crypto/x509/pkix"
 	"encoding/asn1"
-	"github.com/hyperledger/fabric/bccsp/gm"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/gm"
 	"github.com/tjfoc/gmsm/sm2"
 	"math/big"
 	"net"
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/bccsp/utils"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/utils"
 	"github.com/stretchr/testify/assert"
 )
 

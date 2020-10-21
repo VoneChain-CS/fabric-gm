@@ -13,13 +13,13 @@ import (
 	"sync"
 	"time"
 
+	commonutil "github.com/VoneChain-CS/fabric-gm/common/util"
+	"github.com/VoneChain-CS/fabric-gm/core/committer"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/gossip/metrics"
+	privdatacommon "github.com/VoneChain-CS/fabric-gm/gossip/privdata/common"
 	protosgossip "github.com/hyperledger/fabric-protos-go/gossip"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	commonutil "github.com/hyperledger/fabric/common/util"
-	"github.com/hyperledger/fabric/core/committer"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/gossip/metrics"
-	privdatacommon "github.com/hyperledger/fabric/gossip/privdata/common"
 	"github.com/pkg/errors"
 )
 

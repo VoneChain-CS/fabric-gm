@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/hyperledger/fabric/common/metadata"
+	"github.com/VoneChain-CS/fabric-gm/common/metadata"
 )
 
 const ProgramName = "configtxgen"

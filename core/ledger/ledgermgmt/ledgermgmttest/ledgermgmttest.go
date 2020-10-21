@@ -9,11 +9,11 @@ package ledgermgmttest
 import (
 	"fmt"
 
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/common/metrics/disabled"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/ledger/ledgermgmt"
-	"github.com/hyperledger/fabric/core/ledger/mock"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics/disabled"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/ledgermgmt"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/mock"
 )
 
 // NewInitializer returns an instance of ledgermgmt Initializer

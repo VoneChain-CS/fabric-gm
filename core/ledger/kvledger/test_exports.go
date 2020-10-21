@@ -9,7 +9,7 @@ package kvledger
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric/common/ledger/util/leveldbhelper"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/util/leveldbhelper"
 	"github.com/stretchr/testify/require"
 )
 

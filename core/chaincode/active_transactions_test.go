@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package chaincode_test
 
 import (
-	"github.com/hyperledger/fabric/core/chaincode"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"

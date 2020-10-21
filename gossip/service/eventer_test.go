@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
+	"github.com/VoneChain-CS/fabric-gm/gossip/util"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/channelconfig"
-	"github.com/hyperledger/fabric/gossip/util"
 )
 
 const testChannelID = "foo"

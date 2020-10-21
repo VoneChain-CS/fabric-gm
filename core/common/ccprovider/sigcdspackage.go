@@ -22,12 +22,12 @@ import (
 	"io/ioutil"
 	"os"
 
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/factory"
+	"github.com/VoneChain-CS/fabric-gm/core/common/ccpackage"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/factory"
-	"github.com/hyperledger/fabric/core/common/ccpackage"
 )
 
 //----- SignedCDSData ------

@@ -10,7 +10,7 @@ import (
 	"github.com/tjfoc/gmsm/sm2"
 	"io/ioutil"
 
-	"github.com/hyperledger/fabric/internal/pkg/comm"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
 	tls "github.com/tjfoc/gmtls"
 )
 

@@ -13,16 +13,16 @@ import (
 	"path/filepath"
 	"syscall"
 
+	"github.com/VoneChain-CS/fabric-gm/common/policydsl"
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
+	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	docker "github.com/fsouza/go-dockerclient"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/discovery"
 	pm "github.com/hyperledger/fabric-protos-go/msp"
-	"github.com/hyperledger/fabric/common/policydsl"
-	"github.com/hyperledger/fabric/integration/nwo"
-	"github.com/hyperledger/fabric/integration/nwo/commands"
-	"github.com/hyperledger/fabric/msp"
-	"github.com/hyperledger/fabric/protoutil"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
@@ -177,7 +177,7 @@ var _ = Describe("DiscoveryService", func() {
 		chaincode := nwo.Chaincode{
 			Name:    "mycc",
 			Version: "1.0",
-			Path:    "github.com/hyperledger/fabric/integration/chaincode/simple/cmd",
+			Path:    "github.com/VoneChain-CS/fabric-gm/integration/chaincode/simple/cmd",
 			Ctor:    `{"Args":["init","a","100","b","200"]}`,
 			Policy:  `OR (AND ('Org1MSP.member','Org2MSP.member'), AND ('Org1MSP.member','Org3MSP.member'), AND ('Org2MSP.member','Org3MSP.member'))`,
 		}
@@ -400,7 +400,7 @@ var _ = Describe("DiscoveryService", func() {
 		Expect(sess.Err).To(gbytes.Say(`failed constructing descriptor for chaincodes:<name:"mycc-lifecycle"`))
 
 		By("deploying chaincode using org1 and org2")
-		chaincodePath := components.Build("github.com/hyperledger/fabric/integration/chaincode/simple/cmd")
+		chaincodePath := components.Build("github.com/VoneChain-CS/fabric-gm/integration/chaincode/simple/cmd")
 		chaincode = nwo.Chaincode{
 			Name:                "mycc-lifecycle",
 			Version:             "1.0",

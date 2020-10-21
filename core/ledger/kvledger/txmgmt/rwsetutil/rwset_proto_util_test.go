@@ -19,10 +19,10 @@ package rwsetutil
 import (
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset"
-	"github.com/hyperledger/fabric/core/ledger/internal/version"
 	"github.com/kr/pretty"
 	"github.com/stretchr/testify/assert"
 )

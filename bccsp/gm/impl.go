@@ -21,8 +21,8 @@ import (
 	"hash"
 	"reflect"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
 	"github.com/pkg/errors"
 	"github.com/tjfoc/gmsm/sm3"
 	"golang.org/x/crypto/sha3"

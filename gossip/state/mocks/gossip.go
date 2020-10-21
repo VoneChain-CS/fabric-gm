@@ -7,14 +7,14 @@ SPDX-License-Identifier: Apache-2.0
 package mocks
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/gossip/api"
+	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
+	"github.com/VoneChain-CS/fabric-gm/gossip/common"
+	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
+	"github.com/VoneChain-CS/fabric-gm/gossip/filter"
+	"github.com/VoneChain-CS/fabric-gm/gossip/gossip"
+	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
-	"github.com/hyperledger/fabric/gossip/api"
-	"github.com/hyperledger/fabric/gossip/comm"
-	"github.com/hyperledger/fabric/gossip/common"
-	"github.com/hyperledger/fabric/gossip/discovery"
-	"github.com/hyperledger/fabric/gossip/filter"
-	"github.com/hyperledger/fabric/gossip/gossip"
-	"github.com/hyperledger/fabric/gossip/protoext"
 	"github.com/stretchr/testify/mock"
 )
 

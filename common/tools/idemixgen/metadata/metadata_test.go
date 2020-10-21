@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/hyperledger/fabric/common/tools/idemixgen/metadata"
+	"github.com/VoneChain-CS/fabric-gm/common/tools/idemixgen/metadata"
 	"github.com/stretchr/testify/assert"
 )
 

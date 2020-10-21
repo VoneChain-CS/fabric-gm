@@ -4,8 +4,8 @@ package mock
 import (
 	"sync"
 
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
 	"github.com/hyperledger/fabric-lib-go/healthz"
-	"github.com/hyperledger/fabric/core/ledger"
 )
 
 type HealthCheckRegistry struct {

@@ -12,9 +12,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hyperledger/fabric/common/ledger/blkstorage"
-	"github.com/hyperledger/fabric/common/ledger/blockledger"
-	"github.com/hyperledger/fabric/common/metrics/disabled"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/blkstorage"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics/disabled"
 	"github.com/stretchr/testify/assert"
 )
 

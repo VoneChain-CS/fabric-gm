@@ -9,9 +9,9 @@ package configtx
 import (
 	"strings"
 
+	"github.com/VoneChain-CS/fabric-gm/common/policies"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	cb "github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric/common/policies"
-	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 )
 

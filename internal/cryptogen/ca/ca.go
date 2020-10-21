@@ -14,8 +14,8 @@ import (
 	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/pem"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/gm"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/gm"
 	"github.com/tjfoc/gmsm/sm2"
 	"io/ioutil"
 	"math/big"
@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hyperledger/fabric/internal/cryptogen/csp"
+	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/csp"
 	"github.com/pkg/errors"
 )
 

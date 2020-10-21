@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package channelconfig
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/common/capabilities"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/capabilities"
 	"github.com/pkg/errors"
 )
 

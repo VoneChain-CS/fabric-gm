@@ -15,13 +15,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
+	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
+	"github.com/VoneChain-CS/fabric-gm/gossip/gossip/algo"
+	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/VoneChain-CS/fabric-gm/gossip/util"
 	"github.com/hyperledger/fabric-protos-go/gossip"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
-	"github.com/hyperledger/fabric/gossip/comm"
-	"github.com/hyperledger/fabric/gossip/discovery"
-	"github.com/hyperledger/fabric/gossip/gossip/algo"
-	"github.com/hyperledger/fabric/gossip/protoext"
-	"github.com/hyperledger/fabric/gossip/util"
 	"github.com/stretchr/testify/assert"
 )
 

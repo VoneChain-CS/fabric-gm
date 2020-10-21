@@ -10,11 +10,11 @@ import (
 	"fmt"
 	"unicode/utf8"
 
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/mock"
+	"github.com/VoneChain-CS/fabric-gm/core/common/ccprovider"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/core/chaincode"
-	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
-	"github.com/hyperledger/fabric/core/chaincode/mock"
-	"github.com/hyperledger/fabric/core/common/ccprovider"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

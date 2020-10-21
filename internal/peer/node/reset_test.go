@@ -13,7 +13,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hyperledger/fabric/core/config"
+	"github.com/VoneChain-CS/fabric-gm/core/config"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

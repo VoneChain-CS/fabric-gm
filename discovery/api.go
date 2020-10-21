@@ -7,11 +7,11 @@ SPDX-License-Identifier: Apache-2.0
 package discovery
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/gossip/api"
+	"github.com/VoneChain-CS/fabric-gm/gossip/common"
+	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	discprotos "github.com/hyperledger/fabric-protos-go/discovery"
-	"github.com/hyperledger/fabric/gossip/api"
-	"github.com/hyperledger/fabric/gossip/common"
-	"github.com/hyperledger/fabric/gossip/discovery"
-	"github.com/hyperledger/fabric/protoutil"
 )
 
 // AccessControlSupport checks if clients are eligible of being serviced

@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/gossip/metrics"
-	"github.com/hyperledger/fabric/gossip/metrics/mocks"
-	"github.com/hyperledger/fabric/gossip/util"
+	"github.com/VoneChain-CS/fabric-gm/gossip/metrics"
+	"github.com/VoneChain-CS/fabric-gm/gossip/metrics/mocks"
+	"github.com/VoneChain-CS/fabric-gm/gossip/util"
 	"github.com/stretchr/testify/assert"
 )
 

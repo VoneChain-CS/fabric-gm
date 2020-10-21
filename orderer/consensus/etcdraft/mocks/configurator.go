@@ -4,8 +4,8 @@ package mocks
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/orderer/common/cluster"
-	"github.com/hyperledger/fabric/orderer/consensus/etcdraft"
+	"github.com/VoneChain-CS/fabric-gm/orderer/common/cluster"
+	"github.com/VoneChain-CS/fabric-gm/orderer/consensus/etcdraft"
 )
 
 type FakeConfigurator struct {

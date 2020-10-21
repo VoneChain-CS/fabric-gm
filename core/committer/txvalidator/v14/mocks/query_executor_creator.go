@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	ledger "github.com/hyperledger/fabric/core/ledger"
+	ledger "github.com/VoneChain-CS/fabric-gm/core/ledger"
 	mock "github.com/stretchr/testify/mock"
 )
 

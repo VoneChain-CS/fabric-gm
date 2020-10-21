@@ -19,9 +19,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/platforms/util"
+	"github.com/VoneChain-CS/fabric-gm/core/config/configtest"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/core/chaincode/platforms/util"
-	"github.com/hyperledger/fabric/core/config/configtest"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
@@ -105,7 +105,7 @@ func TestNormalizePath(t *testing.T) {
 		path   string
 		result string
 	}{
-		{path: "github.com/hyperledger/fabric/cmd/peer", result: "github.com/hyperledger/fabric/cmd/peer"},
+		{path: "github.com/VoneChain-CS/fabric-gm/cmd/peer", result: "github.com/VoneChain-CS/fabric-gm/cmd/peer"},
 		{path: "testdata/ccmodule", result: "ccmodule"},
 		{path: "missing", result: "missing"},
 		{path: tempdir, result: tempdir}, // /dev/null is returned from `go env GOMOD`

@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/hyperledger/fabric/internal/configtxlator/metadata"
+	"github.com/VoneChain-CS/fabric-gm/internal/configtxlator/metadata"
 	"github.com/stretchr/testify/assert"
 )
 

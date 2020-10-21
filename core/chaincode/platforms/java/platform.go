@@ -17,9 +17,9 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/platforms/util"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/core/chaincode/platforms/util"
 )
 
 var logger = flogging.MustGetLogger("chaincode.platform.java")

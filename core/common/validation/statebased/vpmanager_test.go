@@ -15,12 +15,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/VoneChain-CS/fabric-gm/common/policydsl"
+	validation "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api/state"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/policydsl"
-	validation "github.com/hyperledger/fabric/core/handlers/validation/api/state"
-	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

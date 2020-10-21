@@ -9,13 +9,15 @@ package config
 
 import (
 	"fmt"
-	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
 	"os"
 	"path/filepath"
 
 	"github.com/spf13/viper"
 )
+
 var logger = flogging.MustGetLogger("orderer.common.server")
+
 func dirExists(path string) bool {
 	fi, err := os.Stat(path)
 	if err != nil {

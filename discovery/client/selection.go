@@ -11,7 +11,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
 )
 
 // Filter filters and sorts the given endorsers

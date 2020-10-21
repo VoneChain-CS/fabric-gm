@@ -7,11 +7,11 @@ SPDX-License-Identifier: Apache-2.0
 package gossip
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/gossip/api"
+	"github.com/VoneChain-CS/fabric-gm/gossip/common"
+	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
+	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
 	"github.com/hyperledger/fabric-protos-go/gossip"
-	"github.com/hyperledger/fabric/gossip/api"
-	"github.com/hyperledger/fabric/gossip/common"
-	"github.com/hyperledger/fabric/gossip/discovery"
-	"github.com/hyperledger/fabric/gossip/protoext"
 )
 
 //go:generate counterfeiter -o mocks/gossip.go -fake-name Gossip . Gossip

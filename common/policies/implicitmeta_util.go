@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package policies
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	cb "github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric/protoutil"
 )
 
 // ImplicitMetaPolicyWithSubPolicy creates an implicitmeta policy

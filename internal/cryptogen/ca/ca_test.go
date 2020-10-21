@@ -14,8 +14,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hyperledger/fabric/internal/cryptogen/ca"
-	"github.com/hyperledger/fabric/internal/cryptogen/csp"
+	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/ca"
+	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/csp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -243,7 +243,7 @@ func TestGenerateSignCertificate(t *testing.T) {
 
 	// use an empty CA to test error path
 	badCA := &ca.CA{
-		Name:     "badCA",
+		Name:        "badCA",
 		SignSm2Cert: &sm2.Certificate{},
 	}
 	_, err = badCA.SignCertificate(certDir, testName, nil, nil, &sm2.PublicKey{},

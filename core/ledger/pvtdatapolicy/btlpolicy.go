@@ -10,8 +10,8 @@ import (
 	"math"
 	"sync"
 
+	"github.com/VoneChain-CS/fabric-gm/core/common/privdata"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/core/common/privdata"
 )
 
 var defaultBTL uint64 = math.MaxUint64

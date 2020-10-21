@@ -11,13 +11,13 @@ import (
 	"os"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/core/aclmgmt/mocks"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/identity"
+	msptesttools "github.com/VoneChain-CS/fabric-gm/msp/mgmt/testtools"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/core/aclmgmt/mocks"
-	"github.com/hyperledger/fabric/internal/pkg/identity"
-	msptesttools "github.com/hyperledger/fabric/msp/mgmt/testtools"
-	"github.com/hyperledger/fabric/protoutil"
 	"github.com/stretchr/testify/assert"
 )
 

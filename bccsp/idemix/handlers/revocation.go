@@ -13,7 +13,7 @@ import (
 	"github.com/tjfoc/gmsm/sm2"
 	"reflect"
 
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
 	"github.com/pkg/errors"
 )
 

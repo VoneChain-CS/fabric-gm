@@ -11,9 +11,9 @@ import (
 	"os"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/testutil"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/util"
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/common/ledger/testutil"
-	"github.com/hyperledger/fabric/common/ledger/util"
 	"github.com/stretchr/testify/assert"
 )
 

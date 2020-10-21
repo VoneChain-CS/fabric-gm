@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package lscc
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/common/cauthdsl"
+	"github.com/VoneChain-CS/fabric-gm/common/policydsl"
+	"github.com/VoneChain-CS/fabric-gm/core/common/ccprovider"
+	"github.com/VoneChain-CS/fabric-gm/msp/mgmt"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/cauthdsl"
-	"github.com/hyperledger/fabric/common/policydsl"
-	"github.com/hyperledger/fabric/core/common/ccprovider"
-	"github.com/hyperledger/fabric/msp/mgmt"
-	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 )
 

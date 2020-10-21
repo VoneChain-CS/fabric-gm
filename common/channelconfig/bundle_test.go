@@ -9,9 +9,9 @@ package channelconfig
 import (
 	"testing"
 
+	cc "github.com/VoneChain-CS/fabric-gm/common/capabilities"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
-	cc "github.com/hyperledger/fabric/common/capabilities"
 	"github.com/stretchr/testify/assert"
 )
 

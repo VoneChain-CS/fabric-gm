@@ -14,14 +14,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/VoneChain-CS/fabric-gm/common/metrics/disabled"
+	"github.com/VoneChain-CS/fabric-gm/gossip/common"
+	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
+	"github.com/VoneChain-CS/fabric-gm/gossip/metrics"
+	"github.com/VoneChain-CS/fabric-gm/gossip/metrics/mocks"
+	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/VoneChain-CS/fabric-gm/gossip/util"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
-	"github.com/hyperledger/fabric/common/metrics/disabled"
-	"github.com/hyperledger/fabric/gossip/common"
-	"github.com/hyperledger/fabric/gossip/discovery"
-	"github.com/hyperledger/fabric/gossip/metrics"
-	"github.com/hyperledger/fabric/gossip/metrics/mocks"
-	"github.com/hyperledger/fabric/gossip/protoext"
-	"github.com/hyperledger/fabric/gossip/util"
 	"github.com/stretchr/testify/assert"
 )
 

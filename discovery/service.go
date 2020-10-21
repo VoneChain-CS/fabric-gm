@@ -12,14 +12,14 @@ import (
 	"encoding/hex"
 	"fmt"
 
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/util"
+	"github.com/VoneChain-CS/fabric-gm/discovery/protoext"
+	common2 "github.com/VoneChain-CS/fabric-gm/gossip/common"
+	discovery2 "github.com/VoneChain-CS/fabric-gm/gossip/discovery"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/hyperledger/fabric-protos-go/discovery"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/common/util"
-	"github.com/hyperledger/fabric/discovery/protoext"
-	common2 "github.com/hyperledger/fabric/gossip/common"
-	discovery2 "github.com/hyperledger/fabric/gossip/discovery"
-	"github.com/hyperledger/fabric/internal/pkg/comm"
-	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 )
 

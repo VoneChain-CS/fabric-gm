@@ -9,7 +9,7 @@ package common_test
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric/internal/peer/common"
+	"github.com/VoneChain-CS/fabric-gm/internal/peer/common"
 	"github.com/stretchr/testify/assert"
 )
 

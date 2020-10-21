@@ -7,10 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package validation
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/privacyenabledstate"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/rwsetutil"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/core/ledger/internal/version"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/privacyenabledstate"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
 )
 
 // block is used to used to hold the information from its proto format to a structure

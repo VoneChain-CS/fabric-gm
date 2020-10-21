@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package deliver_test
 
 import (
-	"github.com/hyperledger/fabric/common/ledger/blockledger"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
 )
 
 //go:generate counterfeiter -o mock/block_reader.go -fake-name BlockReader . blockledgerReader

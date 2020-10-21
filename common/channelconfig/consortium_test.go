@@ -8,9 +8,9 @@ package channelconfig
 import (
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/msp"
 	cb "github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/msp"
 	"github.com/stretchr/testify/assert"
 )
 

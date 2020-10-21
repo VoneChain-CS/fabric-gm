@@ -9,13 +9,13 @@ package aclmgmt
 import (
 	"fmt"
 
+	"github.com/VoneChain-CS/fabric-gm/common/policies"
+	"github.com/VoneChain-CS/fabric-gm/core/aclmgmt/resources"
+	"github.com/VoneChain-CS/fabric-gm/core/policy"
+	"github.com/VoneChain-CS/fabric-gm/msp/mgmt"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/policies"
-	"github.com/hyperledger/fabric/core/aclmgmt/resources"
-	"github.com/hyperledger/fabric/core/policy"
-	"github.com/hyperledger/fabric/msp/mgmt"
-	"github.com/hyperledger/fabric/protoutil"
 )
 
 const (

@@ -9,19 +9,19 @@ package lifecycle_test
 import (
 	"fmt"
 
+	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
+	"github.com/VoneChain-CS/fabric-gm/common/util"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle/mock"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/peer"
+	"github.com/VoneChain-CS/fabric-gm/gossip/privdata"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset"
 	"github.com/hyperledger/fabric-protos-go/msp"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	lb "github.com/hyperledger/fabric-protos-go/peer/lifecycle"
-	"github.com/hyperledger/fabric/common/channelconfig"
-	"github.com/hyperledger/fabric/common/util"
-	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
-	"github.com/hyperledger/fabric/core/chaincode/lifecycle/mock"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/peer"
-	"github.com/hyperledger/fabric/gossip/privdata"
-	"github.com/hyperledger/fabric/protoutil"
 
 	"github.com/golang/protobuf/proto"
 

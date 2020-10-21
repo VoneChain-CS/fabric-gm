@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 syntax = "proto3";
 
-option go_package = "github.com/hyperledger/fabric/core/comm/testpb";
+option go_package = "github.com/VoneChain-CS/fabric-gm/core/comm/testpb";
 
 message Empty {}
 

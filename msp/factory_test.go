@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package msp
 
 import (
-	"github.com/hyperledger/fabric/bccsp/gm"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/gm"
 	"reflect"
 	"runtime"
 	"testing"
 
-	"github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
 	"github.com/stretchr/testify/assert"
 )
 

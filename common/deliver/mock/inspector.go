@@ -5,8 +5,8 @@ import (
 	"context"
 	"sync"
 
+	"github.com/VoneChain-CS/fabric-gm/common/deliver"
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/common/deliver"
 )
 
 type Inspector struct {

@@ -13,15 +13,15 @@ import (
 	"path/filepath"
 	"syscall"
 
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator"
+	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/protoext/ordererext"
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo/fabricconfig"
+	"github.com/VoneChain-CS/fabric-gm/integration/runner"
 	docker "github.com/fsouza/go-dockerclient"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric/common/tools/protolator"
-	"github.com/hyperledger/fabric/common/tools/protolator/protoext/ordererext"
-	"github.com/hyperledger/fabric/integration/nwo"
-	"github.com/hyperledger/fabric/integration/nwo/commands"
-	"github.com/hyperledger/fabric/integration/nwo/fabricconfig"
-	"github.com/hyperledger/fabric/integration/runner"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"
 	"github.com/tedsuo/ifrit"
@@ -123,7 +123,7 @@ var _ = Describe("Lifecycle", func() {
 		testPeers := network.PeersWithChannel("testchannel")
 		org1peer0 := network.Peer("Org1", "peer0")
 
-		chaincodePath := components.Build("github.com/hyperledger/fabric/integration/chaincode/simple/cmd")
+		chaincodePath := components.Build("github.com/VoneChain-CS/fabric-gm/integration/chaincode/simple/cmd")
 		chaincode := nwo.Chaincode{
 			Name:                "My_1st-Chaincode",
 			Version:             "Version-0.0",

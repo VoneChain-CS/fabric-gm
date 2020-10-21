@@ -8,16 +8,16 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/hyperledger/fabric/internal/cryptogen/csp"
+	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/csp"
 	"io"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"text/template"
 
-	"github.com/hyperledger/fabric/internal/cryptogen/ca"
-	"github.com/hyperledger/fabric/internal/cryptogen/metadata"
-	"github.com/hyperledger/fabric/internal/cryptogen/msp"
+	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/ca"
+	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/metadata"
+	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/msp"
 
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 	yaml "gopkg.in/yaml.v2"
@@ -207,7 +207,7 @@ var (
 	outputDir     = gen.Flag("output", "The output directory in which to place artifacts").Default("crypto-config").String()
 	genConfigFile = gen.Flag("config", "The configuration template to use").File()
 
-	showtemplate  = app.Command("showtemplate", "Show the default configuration template")
+	showtemplate = app.Command("showtemplate", "Show the default configuration template")
 
 	version       = app.Command("version", "Show version information")
 	ext           = app.Command("extend", "Extend existing network")

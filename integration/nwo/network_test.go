@@ -13,9 +13,9 @@ import (
 	"path/filepath"
 	"syscall"
 
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
+	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
 	docker "github.com/fsouza/go-dockerclient"
-	"github.com/hyperledger/fabric/integration/nwo"
-	"github.com/hyperledger/fabric/integration/nwo/commands"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -82,7 +82,7 @@ var _ = Describe("Network", func() {
 			legacyChaincode := nwo.Chaincode{
 				Name:    "mycc",
 				Version: "0.0",
-				Path:    "github.com/hyperledger/fabric/integration/chaincode/simple/cmd",
+				Path:    "github.com/VoneChain-CS/fabric-gm/integration/chaincode/simple/cmd",
 				Ctor:    `{"Args":["init","a","100","b","200"]}`,
 				Policy:  `AND ('Org1ExampleCom.member','Org2ExampleCom.member')`,
 			}
@@ -99,7 +99,7 @@ var _ = Describe("Network", func() {
 			chaincode := nwo.Chaincode{
 				Name:            "mycc",
 				Version:         "0.0",
-				Path:            "github.com/hyperledger/fabric/integration/chaincode/simple/cmd",
+				Path:            "github.com/VoneChain-CS/fabric-gm/integration/chaincode/simple/cmd",
 				Lang:            "golang",
 				PackageFile:     filepath.Join(tempDir, "simplecc.tar.gz"),
 				Ctor:            `{"Args":["init","a","100","b","200"]}`,
@@ -197,7 +197,7 @@ var _ = Describe("Network", func() {
 			legacyChaincode := nwo.Chaincode{
 				Name:    "mycc",
 				Version: "0.0",
-				Path:    "github.com/hyperledger/fabric/integration/chaincode/simple/cmd",
+				Path:    "github.com/VoneChain-CS/fabric-gm/integration/chaincode/simple/cmd",
 				Ctor:    `{"Args":["init","a","100","b","200"]}`,
 				Policy:  `AND ('Org1ExampleCom.member','Org2ExampleCom.member')`,
 			}
@@ -256,7 +256,7 @@ var _ = Describe("Network", func() {
 			chaincode := nwo.Chaincode{
 				Name:              "mycc",
 				Version:           "0.0",
-				Path:              "github.com/hyperledger/fabric/integration/chaincode/simple/cmd",
+				Path:              "github.com/VoneChain-CS/fabric-gm/integration/chaincode/simple/cmd",
 				Lang:              "golang",
 				PackageFile:       filepath.Join(tempDir, "simplecc.tar.gz"),
 				Ctor:              `{"Args":["init","a","100","b","200"]}`,

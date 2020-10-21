@@ -4,7 +4,7 @@ package mocks
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/common/policies"
+	"github.com/VoneChain-CS/fabric-gm/common/policies"
 )
 
 type ChannelPolicyManagerGetter struct {

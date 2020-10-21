@@ -13,7 +13,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
 	"github.com/pkg/errors"
 )
 

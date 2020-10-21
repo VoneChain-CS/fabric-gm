@@ -9,7 +9,7 @@ package comm
 import (
 	"context"
 
-	"github.com/hyperledger/fabric/common/util"
+	"github.com/VoneChain-CS/fabric-gm/common/util"
 	credentials "github.com/tjfoc/gmtls/gmcredentials"
 	"google.golang.org/grpc/peer"
 )

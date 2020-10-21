@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/core/chaincode/persistence"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/persistence"
 )
 
 type PackageParser struct {

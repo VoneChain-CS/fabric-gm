@@ -7,19 +7,18 @@ SPDX-License-Identifier: Apache-2.0
 package util
 
 import (
-
-	credentials "github.com/tjfoc/gmtls/gmcredentials"
 	"fmt"
 	"github.com/tjfoc/gmsm/sm2"
 	tls "github.com/tjfoc/gmtls"
+	credentials "github.com/tjfoc/gmtls/gmcredentials"
 	"net"
 	"strconv"
 	"time"
 
-	"github.com/hyperledger/fabric/common/crypto/tlsgen"
-	"github.com/hyperledger/fabric/gossip/api"
-	"github.com/hyperledger/fabric/gossip/common"
-	"github.com/hyperledger/fabric/internal/pkg/comm"
+	"github.com/VoneChain-CS/fabric-gm/common/crypto/tlsgen"
+	"github.com/VoneChain-CS/fabric-gm/gossip/api"
+	"github.com/VoneChain-CS/fabric-gm/gossip/common"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
 	"google.golang.org/grpc"
 )
 
@@ -81,7 +80,7 @@ func CreateGRPCLayer() (port int, gRPCServer *comm.GRPCServer, certs *common.TLS
 			Key:         serverKeyPair.Key,
 			Certificate: serverKeyPair.Cert,
 			//TODO useTLS
-			UseTLS:      false,
+			UseTLS: false,
 		},
 	}
 	gRPCServer, err = comm.NewGRPCServer("127.0.0.1:", srvConfig)

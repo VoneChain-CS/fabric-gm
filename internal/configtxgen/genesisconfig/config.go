@@ -13,11 +13,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/viperutil"
+	cf "github.com/VoneChain-CS/fabric-gm/core/config"
+	"github.com/VoneChain-CS/fabric-gm/msp"
 	"github.com/hyperledger/fabric-protos-go/orderer/etcdraft"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/common/viperutil"
-	cf "github.com/hyperledger/fabric/core/config"
-	"github.com/hyperledger/fabric/msp"
 	"github.com/spf13/viper"
 )
 

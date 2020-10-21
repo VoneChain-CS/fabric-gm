@@ -9,8 +9,8 @@ package node
 import (
 	"path/filepath"
 
-	coreconfig "github.com/hyperledger/fabric/core/config"
-	"github.com/hyperledger/fabric/core/ledger"
+	coreconfig "github.com/VoneChain-CS/fabric-gm/core/config"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
 	"github.com/spf13/viper"
 )
 

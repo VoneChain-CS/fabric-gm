@@ -7,13 +7,13 @@ SPDX-License-Identifier: Apache-2.0
 package privdata
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/core/committer"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/transientstore"
+	"github.com/VoneChain-CS/fabric-gm/gossip/privdata/common"
+	"github.com/VoneChain-CS/fabric-gm/gossip/util"
 	protosgossip "github.com/hyperledger/fabric-protos-go/gossip"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
-	"github.com/hyperledger/fabric/core/committer"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/transientstore"
-	"github.com/hyperledger/fabric/gossip/privdata/common"
-	"github.com/hyperledger/fabric/gossip/util"
 	"github.com/pkg/errors"
 )
 

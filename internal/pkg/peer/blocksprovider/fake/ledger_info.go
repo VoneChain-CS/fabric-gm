@@ -4,7 +4,7 @@ package fake
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/internal/pkg/peer/blocksprovider"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/peer/blocksprovider"
 )
 
 type LedgerInfo struct {

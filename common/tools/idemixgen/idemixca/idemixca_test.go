@@ -14,10 +14,10 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/idemix"
+	m "github.com/VoneChain-CS/fabric-gm/msp"
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/idemix"
-	m "github.com/hyperledger/fabric/msp"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

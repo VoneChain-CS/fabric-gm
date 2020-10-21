@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package stateleveldb
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/statedb"
 	proto "github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/ledger/internal/version"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb"
 )
 
 // encodeValue encodes the value, version, and metadata

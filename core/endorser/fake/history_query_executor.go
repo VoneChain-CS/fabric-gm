@@ -4,7 +4,7 @@ package fake
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/common/ledger"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger"
 )
 
 type HistoryQueryExecutor struct {

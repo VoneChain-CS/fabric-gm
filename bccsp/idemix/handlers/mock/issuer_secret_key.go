@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers"
 )
 
 type IssuerSecretKey struct {

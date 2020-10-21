@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hyperledger/fabric/common/ledger/dataformat"
-	"github.com/hyperledger/fabric/core/ledger/mock"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/dataformat"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/mock"
 	"github.com/stretchr/testify/require"
 )
 

@@ -10,12 +10,12 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/ledgermgmt"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/mock"
 	"github.com/hyperledger/fabric-protos-go/common"
 	protopeer "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/ledger/ledgermgmt"
-	"github.com/hyperledger/fabric/core/ledger/mock"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -10,11 +10,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/VoneChain-CS/fabric-gm/common/policies"
+	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/VoneChain-CS/fabric-gm/msp/mgmt"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/policies"
-	"github.com/hyperledger/fabric/msp"
-	"github.com/hyperledger/fabric/msp/mgmt"
-	"github.com/hyperledger/fabric/protoutil"
 )
 
 // PolicyChecker offers methods to check a signed proposal against a specific policy

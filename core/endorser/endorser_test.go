@@ -14,19 +14,19 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"
 
+	"github.com/VoneChain-CS/fabric-gm/common/metrics/metricsfakes"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
+	"github.com/VoneChain-CS/fabric-gm/core/endorser"
+	"github.com/VoneChain-CS/fabric-gm/core/endorser/fake"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
 	mspproto "github.com/hyperledger/fabric-protos-go/msp"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/common/metrics/metricsfakes"
-	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
-	"github.com/hyperledger/fabric/core/endorser"
-	"github.com/hyperledger/fabric/core/endorser/fake"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/protoutil"
 
+	ledgermock "github.com/VoneChain-CS/fabric-gm/core/ledger/mock"
 	"github.com/golang/protobuf/proto"
-	ledgermock "github.com/hyperledger/fabric/core/ledger/mock"
 )
 
 var _ = Describe("Endorser", func() {

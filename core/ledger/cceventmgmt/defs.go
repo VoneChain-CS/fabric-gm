@@ -9,8 +9,8 @@ package cceventmgmt
 import (
 	"fmt"
 
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/core/ledger"
 )
 
 // ChaincodeDefinition captures the info about chaincode

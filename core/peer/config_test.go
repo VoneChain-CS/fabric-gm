@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/internal/pkg/comm"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

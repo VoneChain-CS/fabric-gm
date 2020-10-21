@@ -7,18 +7,18 @@ SPDX-License-Identifier: Apache-2.0
 package tests
 
 import (
+	configtxtest "github.com/VoneChain-CS/fabric-gm/common/configtx/test"
+	"github.com/VoneChain-CS/fabric-gm/common/crypto"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/policydsl"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/tests/fakes"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/txflags"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
 	"github.com/hyperledger/fabric-protos-go/msp"
 	protopeer "github.com/hyperledger/fabric-protos-go/peer"
-	configtxtest "github.com/hyperledger/fabric/common/configtx/test"
-	"github.com/hyperledger/fabric/common/crypto"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/common/policydsl"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/tests/fakes"
-	"github.com/hyperledger/fabric/internal/pkg/txflags"
-	"github.com/hyperledger/fabric/protoutil"
 )
 
 var logger = flogging.MustGetLogger("test2")

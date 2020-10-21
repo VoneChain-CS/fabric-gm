@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hyperledger/fabric/bccsp/pkcs11"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/pkcs11"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 )

@@ -5,8 +5,8 @@ import (
 	"github.com/tjfoc/gmsm/sm2"
 	"sync"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers"
 )
 
 type Revocation struct {

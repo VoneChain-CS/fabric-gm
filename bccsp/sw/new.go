@@ -13,7 +13,7 @@ import (
 	"github.com/tjfoc/gmsm/sm3"
 	"reflect"
 
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/sha3"
 )

@@ -10,8 +10,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/common/flogging/mock"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging/mock"
 	"github.com/stretchr/testify/assert"
 )
 

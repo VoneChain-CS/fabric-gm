@@ -4,8 +4,8 @@ package fake
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/common/ledger"
-	ledgera "github.com/hyperledger/fabric/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger"
+	ledgera "github.com/VoneChain-CS/fabric-gm/core/ledger"
 )
 
 type QueryExecutor struct {

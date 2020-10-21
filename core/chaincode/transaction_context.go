@@ -9,10 +9,10 @@ package chaincode
 import (
 	"sync"
 
+	commonledger "github.com/VoneChain-CS/fabric-gm/common/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/common/privdata"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	commonledger "github.com/hyperledger/fabric/common/ledger"
-	"github.com/hyperledger/fabric/core/common/privdata"
-	"github.com/hyperledger/fabric/core/ledger"
 )
 
 type TransactionContext struct {

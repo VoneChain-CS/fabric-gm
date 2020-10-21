@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger"
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/ledger/kvledger"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -12,19 +12,19 @@ import (
 	"fmt"
 	"time"
 
+	vsccErrors "github.com/VoneChain-CS/fabric-gm/common/errors"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	commonutil "github.com/VoneChain-CS/fabric-gm/common/util"
+	pvtdatasc "github.com/VoneChain-CS/fabric-gm/core/common/privdata"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/transientstore"
+	pvtdatacommon "github.com/VoneChain-CS/fabric-gm/gossip/privdata/common"
+	"github.com/VoneChain-CS/fabric-gm/gossip/util"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
 	"github.com/hyperledger/fabric-protos-go/msp"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	vsccErrors "github.com/hyperledger/fabric/common/errors"
-	"github.com/hyperledger/fabric/common/metrics"
-	commonutil "github.com/hyperledger/fabric/common/util"
-	pvtdatasc "github.com/hyperledger/fabric/core/common/privdata"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/transientstore"
-	pvtdatacommon "github.com/hyperledger/fabric/gossip/privdata/common"
-	"github.com/hyperledger/fabric/gossip/util"
-	"github.com/hyperledger/fabric/protoutil"
 )
 
 type sleeper struct {

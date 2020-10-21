@@ -17,10 +17,10 @@ limitations under the License.
 package txmgr
 
 import (
+	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/ledger/internal/version"
 )
 
 // TxMgr - an interface that a transaction manager should implement

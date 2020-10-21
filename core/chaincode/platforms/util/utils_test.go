@@ -16,9 +16,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/common/metadata"
+	"github.com/VoneChain-CS/fabric-gm/core/config/configtest"
 	docker "github.com/fsouza/go-dockerclient"
-	"github.com/hyperledger/fabric/common/metadata"
-	"github.com/hyperledger/fabric/core/config/configtest"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

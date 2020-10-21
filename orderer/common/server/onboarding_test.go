@@ -22,20 +22,20 @@ import (
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/orderer"
 	"github.com/hyperledger/fabric-protos-go/orderer/etcdraft"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/common/channelconfig"
-	"github.com/hyperledger/fabric/common/configtx"
-	deliver_mocks "github.com/hyperledger/fabric/common/deliver/mock"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/common/ledger/blockledger"
-	"github.com/hyperledger/fabric/core/config/configtest"
-	"github.com/hyperledger/fabric/internal/pkg/comm"
-	"github.com/hyperledger/fabric/internal/pkg/identity"
-	"github.com/hyperledger/fabric/orderer/common/cluster"
-	"github.com/hyperledger/fabric/orderer/common/cluster/mocks"
-	"github.com/hyperledger/fabric/orderer/common/localconfig"
-	server_mocks "github.com/hyperledger/fabric/orderer/common/server/mocks"
-	"github.com/hyperledger/fabric/protoutil"
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
+	"github.com/VoneChain-CS/fabric-gm/common/configtx"
+	deliver_mocks "github.com/VoneChain-CS/fabric-gm/common/deliver/mock"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
+	"github.com/VoneChain-CS/fabric-gm/core/config/configtest"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/identity"
+	"github.com/VoneChain-CS/fabric-gm/orderer/common/cluster"
+	"github.com/VoneChain-CS/fabric-gm/orderer/common/cluster/mocks"
+	"github.com/VoneChain-CS/fabric-gm/orderer/common/localconfig"
+	server_mocks "github.com/VoneChain-CS/fabric-gm/orderer/common/server/mocks"
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"
@@ -52,11 +52,11 @@ var configtxgen, cryptogen, tempDir string
 
 func TestMain(m *testing.M) {
 	var err error
-	configtxgen, err = gexec.Build("github.com/hyperledger/fabric/cmd/configtxgen")
+	configtxgen, err = gexec.Build("github.com/VoneChain-CS/fabric-gm/cmd/configtxgen")
 	if err != nil {
 		os.Exit(-1)
 	}
-	cryptogen, err = gexec.Build("github.com/hyperledger/fabric/cmd/cryptogen")
+	cryptogen, err = gexec.Build("github.com/VoneChain-CS/fabric-gm/cmd/cryptogen")
 	if err != nil {
 		os.Exit(-1)
 	}

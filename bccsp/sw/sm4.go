@@ -16,7 +16,7 @@ limitations under the License.
 package sw
 
 import (
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
 	"github.com/tjfoc/gmsm/sm4"
 )
 

@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package mocks
 
 import (
-	"github.com/hyperledger/fabric/common/metrics"
-	"github.com/hyperledger/fabric/common/metrics/metricsfakes"
-	gmetrics "github.com/hyperledger/fabric/gossip/metrics"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/VoneChain-CS/fabric-gm/common/metrics/metricsfakes"
+	gmetrics "github.com/VoneChain-CS/fabric-gm/gossip/metrics"
 )
 
 type TestMetricProvider struct {

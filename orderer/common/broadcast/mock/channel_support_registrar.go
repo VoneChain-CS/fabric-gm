@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric/orderer/common/broadcast"
+	"github.com/VoneChain-CS/fabric-gm/orderer/common/broadcast"
 )
 
 type ChannelSupportRegistrar struct {

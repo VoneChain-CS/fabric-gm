@@ -4,8 +4,8 @@ package mock
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/core/chaincode/extcc"
-	"github.com/hyperledger/fabric/core/container/ccintf"
+	"github.com/VoneChain-CS/fabric-gm/core/chaincode/extcc"
+	"github.com/VoneChain-CS/fabric-gm/core/container/ccintf"
 )
 
 type ConnectionHandler struct {

@@ -9,8 +9,8 @@ package mocks
 import (
 	"time"
 
+	"github.com/VoneChain-CS/fabric-gm/msp"
 	mspprotos "github.com/hyperledger/fabric-protos-go/msp"
-	"github.com/hyperledger/fabric/msp"
 )
 
 type noopmsp struct {

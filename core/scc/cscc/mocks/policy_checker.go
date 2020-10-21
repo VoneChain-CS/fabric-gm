@@ -4,8 +4,8 @@ package mocks
 import (
 	"sync"
 
+	"github.com/VoneChain-CS/fabric-gm/protoutil"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/protoutil"
 )
 
 type PolicyChecker struct {

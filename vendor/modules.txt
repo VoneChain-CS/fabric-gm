@@ -25,6 +25,8 @@ github.com/Shopify/sarama/mocks
 # github.com/VictoriaMetrics/fastcache v1.4.6
 ## explicit
 github.com/VictoriaMetrics/fastcache
+# github.com/VividCortex/gohistogram v1.0.0
+## explicit
 # github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc
 github.com/alecthomas/template
 github.com/alecthomas/template/parse
@@ -86,6 +88,8 @@ github.com/eapache/go-xerial-snappy
 # github.com/eapache/queue v1.1.0
 ## explicit
 github.com/eapache/queue
+# github.com/frankban/quicktest v1.11.1
+## explicit
 # github.com/fsouza/go-dockerclient v1.4.1
 ## explicit
 github.com/fsouza/go-dockerclient
@@ -153,8 +157,6 @@ github.com/hyperledger/fabric-config/configtx
 github.com/hyperledger/fabric-config/configtx/internal/policydsl
 github.com/hyperledger/fabric-config/configtx/membership
 github.com/hyperledger/fabric-config/configtx/orderer
-# github.com/hyperledger/fabric-contract-api-go v1.1.0
-## explicit
 # github.com/hyperledger/fabric-lib-go v1.0.0
 ## explicit
 github.com/hyperledger/fabric-lib-go/healthz
@@ -188,7 +190,6 @@ github.com/kr/pretty
 ## explicit
 github.com/kr/text
 # github.com/magiconair/properties v1.8.1
-## explicit
 github.com/magiconair/properties
 # github.com/mattn/go-runewidth v0.0.4
 ## explicit
@@ -277,13 +278,11 @@ github.com/rcrowley/go-metrics
 # github.com/sirupsen/logrus v1.4.2
 github.com/sirupsen/logrus
 # github.com/spf13/cast v1.3.1 => ./spf13/cast
-## explicit
 github.com/spf13/cast
 # github.com/spf13/cobra v1.0.0 => ./spf13/cobra
 ## explicit
 github.com/spf13/cobra
 # github.com/spf13/jwalterweatherman v1.1.0 => ./spf13/jwalterweatherman
-## explicit
 github.com/spf13/jwalterweatherman
 # github.com/spf13/pflag v1.0.5 => ./spf13/pflag
 ## explicit
@@ -292,6 +291,7 @@ github.com/spf13/pflag
 ## explicit
 github.com/spf13/viper
 # github.com/stretchr/objx v0.2.0
+## explicit
 github.com/stretchr/objx
 # github.com/stretchr/testify v1.5.1
 ## explicit
@@ -414,7 +414,7 @@ golang.org/x/tools/internal/fastwalk
 golang.org/x/tools/internal/gopathwalk
 golang.org/x/tools/internal/semver
 golang.org/x/tools/internal/span
-# golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7
+# golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
 golang.org/x/xerrors
 golang.org/x/xerrors/internal
 # google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55
@@ -465,6 +465,8 @@ google.golang.org/grpc/tap
 # gopkg.in/alecthomas/kingpin.v2 v2.2.6
 ## explicit
 gopkg.in/alecthomas/kingpin.v2
+# gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15
+## explicit
 # gopkg.in/cheggaaa/pb.v1 v1.0.28
 ## explicit
 gopkg.in/cheggaaa/pb.v1

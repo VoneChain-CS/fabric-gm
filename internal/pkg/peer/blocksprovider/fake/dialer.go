@@ -2,7 +2,7 @@
 package fake
 
 import (
-	"github.com/hyperledger/fabric/internal/pkg/peer/blocksprovider"
+	"github.com/VoneChain-CS/fabric-gm/internal/pkg/peer/blocksprovider"
 	"github.com/tjfoc/gmsm/sm2"
 	"google.golang.org/grpc"
 	"sync"

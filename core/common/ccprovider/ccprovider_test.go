@@ -15,11 +15,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/VoneChain-CS/fabric-gm/common/chaincode"
+	"github.com/VoneChain-CS/fabric-gm/core/common/ccprovider"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/common/chaincode"
-	"github.com/hyperledger/fabric/core/common/ccprovider"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

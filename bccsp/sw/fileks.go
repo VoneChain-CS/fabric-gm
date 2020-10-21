@@ -21,7 +21,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/VoneChain-CS/fabric-gm/bccsp"
 )
 
 // NewFileBasedKeyStore instantiated a file-based key store at a given position.
@@ -317,7 +317,7 @@ func (ks *fileBasedKeyStore) storePublicKey(alias string, publicKey interface{})
 
 func (ks *fileBasedKeyStore) storeKey(alias string, key []byte) error {
 	//pem, err := aesToEncryptedPEM(key, ks.pwd)
-	if len(ks.pwd) == 0{
+	if len(ks.pwd) == 0 {
 		ks.pwd = nil
 	}
 
@@ -396,7 +396,7 @@ func (ks *fileBasedKeyStore) loadKey(alias string) ([]byte, error) {
 	if len(ks.pwd) == 0 {
 		ks.pwd = nil
 	}
-	key, err := sm4.ReadKeyFromMem(pem,ks.pwd)
+	key, err := sm4.ReadKeyFromMem(pem, ks.pwd)
 	if err != nil {
 		logger.Errorf("Failed parsing key [%s]: [%s]", alias, err)
 

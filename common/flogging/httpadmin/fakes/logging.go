@@ -4,7 +4,7 @@ package fakes
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/common/flogging/httpadmin"
+	"github.com/VoneChain-CS/fabric-gm/common/flogging/httpadmin"
 )
 
 type Logging struct {

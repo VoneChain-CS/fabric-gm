@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package v13
 
 import (
+	commonerrors "github.com/VoneChain-CS/fabric-gm/common/errors"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/peer"
-	commonerrors "github.com/hyperledger/fabric/common/errors"
 )
 
 // StateBasedValidator is used to validate a transaction that performs changes to
