@@ -10,7 +10,7 @@ require (
 	github.com/DataDog/zstd v1.4.0 // indirect
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/Microsoft/hcsshim v0.8.6 // indirect
-	github.com/Shopify/sarama v0.0.0-00010101000000-000000000000
+	github.com/Shopify/sarama v1.27.2
 	github.com/VictoriaMetrics/fastcache v1.4.6
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
 	github.com/containerd/continuity v0.0.0-20190426062206-aaeac12a7ffc // indirect
@@ -72,7 +72,7 @@ require (
 )
 
 replace (
-	github.com/Shopify/sarama v0.0.0-00010101000000-000000000000 => ./Shopify/sarama
+	github.com/Shopify/sarama v1.27.2 => ./Shopify/sarama
 	github.com/hyperledger/fabric-chaincode-go => ./fabric-chaincode-go
 	github.com/hyperledger/fabric-config => ./fabric-config
 	github.com/spf13/cast => ./spf13/cast
