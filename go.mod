@@ -32,7 +32,7 @@ require (
 	github.com/hashicorp/go-version v1.2.0
 	github.com/hyperledger/fabric-amcl v0.0.0-20200128223036-d1aa2665426a
 	github.com/hyperledger/fabric-chaincode-go v0.0.0-20200424173110-d7076418f212
-	github.com/hyperledger/fabric-config v0.0.0-00010101000000-000000000000
+	github.com/hyperledger/fabric-config v0.0.9
 	github.com/hyperledger/fabric-lib-go v1.0.0
 	github.com/hyperledger/fabric-protos-go v0.0.0-20200506201313-25f6564b9ac4
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
@@ -74,7 +74,7 @@ require (
 replace (
 	github.com/Shopify/sarama v1.27.2 => ./Shopify/sarama
 	github.com/hyperledger/fabric-chaincode-go => ./fabric-chaincode-go
-	github.com/hyperledger/fabric-config => ./fabric-config
+	github.com/hyperledger/fabric-config v0.0.9 => ./fabric-config
 	github.com/spf13/cast => ./spf13/cast
 	github.com/spf13/cobra => ./spf13/cobra
 	github.com/spf13/jwalterweatherman => ./spf13/jwalterweatherman
