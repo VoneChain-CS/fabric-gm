@@ -9,6 +9,7 @@ package node
 import (
 	"context"
 	"fmt"
+	"github.com/VoneChain-CS/fabric-gm/global"
 	"io"
 	"io/ioutil"
 	"net"
@@ -232,6 +233,7 @@ func serve(args []string) error {
 
 	chaincodeInstallPath := filepath.Join(coreconfig.GetPath("peer.fileSystemPath"), "lifecycle", "chaincodes")
 	ccStore := persistence.NewStore(chaincodeInstallPath)
+	global.G.CCManage.SetStore(ccStore)
 	ccPackageParser := &persistence.ChaincodePackageParser{
 		MetadataProvider: ccprovider.PersistenceAdapter(ccprovider.MetadataAsTarEntries),
 	}
@@ -645,6 +647,8 @@ func serve(args []string) error {
 		PeerAddress:       ccEndpoint,
 		ConnectionHandler: &extcc.ExternalChaincodeRuntime{},
 	}
+
+	global.G.CCManage.SetLaucher(chaincodeLauncher)
 
 	// Keep TestQueries working
 	if !chaincodeConfig.TLSEnabled {

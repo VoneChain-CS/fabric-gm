@@ -16,6 +16,8 @@ import (
 var (
 	channelID   string
 	blockNumber uint64
+	rootFSPath  string
+
 )
 
 func rollbackCmd() *cobra.Command {

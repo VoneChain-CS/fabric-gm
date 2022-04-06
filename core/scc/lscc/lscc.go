@@ -9,7 +9,9 @@ package lscc
 import (
 	"bytes"
 	"fmt"
+	"github.com/VoneChain-CS/fabric-gm/global"
 	"regexp"
+	"strconv"
 	"sync"
 
 	"github.com/VoneChain-CS/fabric-gm/bccsp"
@@ -63,6 +65,9 @@ const (
 	// INSTALL install command
 	INSTALL = "install"
 
+	// UNINSTALL uninstall command
+	UNINSTALL = "uninstall"
+
 	// DEPLOY deploy command
 	DEPLOY = "deploy"
 
@@ -104,6 +109,9 @@ const (
 
 	// GETCOLLECTIONSCONFIGALIAS gets the collections config for a chaincode
 	GETCOLLECTIONSCONFIGALIAS = "getcollectionsconfig"
+
+	// BATCHCALL invoke with batch
+	BATCHCALL = "batchcall"
 )
 
 // FilesystemSupport contains functions that LSCC requires to execute its tasks
@@ -681,6 +689,13 @@ func isValidStatedbArtifactsTar(statedbArtifactsTar []byte) error {
 	return nil
 }
 
+
+func (lscc *SCC) executeUninstall(stub shim.ChaincodeStubInterface, packageID string) error {
+	lscc.BuildRegistry.RemoveBuildStatus(packageID)
+	err := global.G.CCManage.Uninstall(packageID)
+	return err
+}
+
 // executeInstall implements the "install" Invoke transaction
 func (lscc *SCC) executeInstall(stub shim.ChaincodeStubInterface, ccbytes []byte) error {
 	ccpack, err := ccprovider.GetCCPackage(ccbytes, lscc.BCCSP)
@@ -983,6 +998,13 @@ func (lscc *SCC) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 			return shim.Error(err.Error())
 		}
 		return shim.Success([]byte("OK"))
+	case UNINSTALL:
+		packageID := string(args[1])
+		err := lscc.executeUninstall(stub, packageID)
+		if err != nil {
+			return shim.Error(err.Error())
+		}
+		return shim.Success(nil)
 	case DEPLOY, UPGRADE:
 		// we expect a minimum of 3 arguments, the function
 		// name, the chain name and deployment spec
@@ -1150,7 +1172,45 @@ func (lscc *SCC) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 		}
 
 		return lscc.getChaincodeCollectionData(stub, chaincodeName)
+	case BATCHCALL:
+		for i := 1; i < len(args); i += 3 {
+			chaincode := string(args[i])
+			num, _ := strconv.Atoi(string(args[i+1]))
+			arglist := args[i+2]
+			err := batchCall(stub, chaincode, num, arglist)
+			if err != nil {
+				n := (i-1)/4 + 1
+				return shim.Error(fmt.Sprintf("The %dth batch call fails, %s", n, err.Error()))
+			}
+		}
+		return shim.Success(nil)
 	}
 
 	return shim.Error(InvalidFunctionErr(function).Error())
+}
+
+
+
+// batchCall
+func batchCall(stub shim.ChaincodeStubInterface, chaincode string, number int, args []byte) error {
+	argsList := bytes.Split(args, []byte("],"))
+	if number != len(argsList) {
+		return fmt.Errorf("the number of repeated calls %d is not consistent with the length of the parameter list %d", number, len(argsList))
+	}
+	channel := stub.GetChannelID()
+	for i := 0; i < number; i++ {
+		res := stub.InvokeChaincode(chaincode, getArgs(argsList[i]), channel)
+		if res.Status != 200 {
+			return fmt.Errorf("Args{channel: %s, chaincode: %s, num: %d, args: %s},Status:%d, Message: %s", channel, chaincode, i+1, argsList[i][1:], res.Status, res.Message)
+		}
+		logger.Infof("respeon: %s", res.String())
+	}
+	return nil
+}
+
+// batchCall util
+func getArgs(arg []byte) [][]byte {
+	arg = arg[1:]
+	argsList := bytes.Split(arg, []byte(","))
+	return argsList
 }

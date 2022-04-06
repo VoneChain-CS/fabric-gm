@@ -35,6 +35,12 @@ func (br *BuildRegistry) BuildStatus(ccid string) (*BuildStatus, bool) {
 	return bs, ok
 }
 
+func (br *BuildRegistry) RemoveBuildStatus(ccid string) {
+	br.mutex.Lock()
+	defer br.mutex.Unlock()
+	delete(br.builds, ccid)
+}
+
 type BuildStatus struct {
 	mutex sync.Mutex
 	doneC chan struct{}

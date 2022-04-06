@@ -11,12 +11,14 @@ import (
 	"github.com/VoneChain-CS/fabric-gm/internal/peer/common"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
+	"path/filepath"
 )
 
 func resumeCmd() *cobra.Command {
 	resumeChannelCmd.ResetFlags()
 	flags := resumeChannelCmd.Flags()
 	flags.StringVarP(&channelID, "channelID", "c", common.UndefinedParamValue, "Channel to resume.")
+	flags.StringVarP(&rootFSPath, "rootFSPath", "p", common.UndefinedParamValue, "File system path")
 
 	return resumeChannelCmd
 }
@@ -29,8 +31,10 @@ var resumeChannelCmd = &cobra.Command{
 		if channelID == common.UndefinedParamValue {
 			return errors.New("Must supply channel ID")
 		}
-
-		config := ledgerConfig()
-		return kvledger.ResumeChannel(config.RootFSPath, channelID)
+		if rootFSPath == common.UndefinedParamValue {
+			return errors.New("Must supply file system path")
+		}
+		ledgersPath := filepath.Join(rootFSPath, "ledgersData")
+		return kvledger.ResumeChannel(ledgersPath, channelID)
 	},
 }
