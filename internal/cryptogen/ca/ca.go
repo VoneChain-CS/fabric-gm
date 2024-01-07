@@ -14,7 +14,6 @@ import (
 	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/pem"
-	"github.com/hyperledger/fabric/bccsp"
 	"github.com/hyperledger/fabric/bccsp/gm"
 	"github.com/tjfoc/gmsm/sm2"
 	"io/ioutil"
@@ -24,7 +23,6 @@ import (
 	"path/filepath"
 	"strings"
 	"time"
-
 	"github.com/hyperledger/fabric/internal/cryptogen/csp"
 	"github.com/pkg/errors"
 )
