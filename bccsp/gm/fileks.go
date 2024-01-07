@@ -125,7 +125,7 @@ func (ks *fileBasedKeyStore) GetKey(ski []byte) (k bccsp.Key, err error) {
 			return nil, fmt.Errorf("Failed loading key [%x] [%s]", ski, err)
 		}
 
-		return &gmsm4PrivateKey{key, false}, nil
+		return &SM4PrivateKey{key, false}, nil
 	case "sk":
 		// Load the private key
 		key, err := ks.loadPrivateKey(hex.EncodeToString(ski))
@@ -135,7 +135,7 @@ func (ks *fileBasedKeyStore) GetKey(ski []byte) (k bccsp.Key, err error) {
 
 		switch key.(type) {
 		case *sm2.PrivateKey:
-			return &gmsm2PrivateKey{key.(*sm2.PrivateKey)}, nil
+			return &SM2PrivateKey{key.(*sm2.PrivateKey)}, nil
 		default:
 			return nil, errors.New("Secret key type not recognized")
 		}
@@ -148,7 +148,7 @@ func (ks *fileBasedKeyStore) GetKey(ski []byte) (k bccsp.Key, err error) {
 
 		switch key.(type) {
 		case *sm2.PublicKey:
-			return &gmsm2PublicKey{key.(*sm2.PublicKey)}, nil
+			return &SM2PublicKey{key.(*sm2.PublicKey)}, nil
 		default:
 			return nil, errors.New("Public key type not recognized")
 		}
@@ -168,23 +168,23 @@ func (ks *fileBasedKeyStore) StoreKey(k bccsp.Key) (err error) {
 		return errors.New("Invalid key. It must be different from nil")
 	}
 	switch k.(type) {
-	case *gmsm2PrivateKey:
-		kk := k.(*gmsm2PrivateKey)
+	case *SM2PrivateKey:
+		kk := k.(*SM2PrivateKey)
 
 		err = ks.storePrivateKey(hex.EncodeToString(k.SKI()), kk.privKey)
 		if err != nil {
 			return fmt.Errorf("Failed storing GMSM2 private key [%s]", err)
 		}
 
-	case *gmsm2PublicKey:
-		kk := k.(*gmsm2PublicKey)
+	case *SM2PublicKey:
+		kk := k.(*SM2PublicKey)
 
 		err = ks.storePublicKey(hex.EncodeToString(k.SKI()), kk.pubKey)
 		if err != nil {
 			return fmt.Errorf("Failed storing GMSM2 public key [%s]", err)
 		}
-	case *gmsm4PrivateKey:
-		kk := k.(*gmsm4PrivateKey)
+	case *SM4PrivateKey:
+		kk := k.(*SM4PrivateKey)
 
 		// keypath := ks.getPathForAlias(hex.EncodeToString(k.SKI()), "key")
 
@@ -216,7 +216,7 @@ func (ks *fileBasedKeyStore) searchKeystoreForSKI(ski []byte) (k bccsp.Key, err 
 			continue
 		}
 
-		k = &gmsm2PrivateKey{key}
+		k = &SM2PrivateKey{key}
 
 		if !bytes.Equal(k.SKI(), ski) {
 			continue

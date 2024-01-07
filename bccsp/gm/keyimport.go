@@ -27,9 +27,9 @@ import (
 )
 
 //实现内部的 KeyImporter 接口
-type gmsm4ImportKeyOptsKeyImporter struct{}
+type SM4ImportKeyOptsKeyImporter struct{}
 
-func (*gmsm4ImportKeyOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyImportOpts) (k bccsp.Key, err error) {
+func (*SM4ImportKeyOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyImportOpts) (k bccsp.Key, err error) {
 	sm4Raw, ok := raw.([]byte)
 	if !ok {
 		return nil, errors.New("Invalid raw material. Expected byte array.")
@@ -39,20 +39,20 @@ func (*gmsm4ImportKeyOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyI
 		return nil, errors.New("Invalid raw material. It must not be nil.")
 	}
 
-	return &gmsm4PrivateKey{utils.Clone(sm4Raw), false}, nil
+	return &SM4PrivateKey{utils.Clone(sm4Raw), false}, nil
 }
 
-type gmsm2PrivateKeyImportOptsKeyImporter struct{}
+type SM2PrivateKeyImportOptsKeyImporter struct{}
 
-func (*gmsm2PrivateKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyImportOpts) (k bccsp.Key, err error) {
+func (*SM2PrivateKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyImportOpts) (k bccsp.Key, err error) {
 
 	der, ok := raw.([]byte)
 	if !ok {
-		return nil, errors.New("[GMSM2PrivateKeyImportOpts] Invalid raw material. Expected byte array.")
+		return nil, errors.New("[SM2PrivateKeyImportOpts] Invalid raw material. Expected byte array.")
 	}
 
 	if len(der) == 0 {
-		return nil, errors.New("[GMSM2PrivateKeyImportOpts] Invalid raw. It must not be nil.")
+		return nil, errors.New("[SM2PrivateKeyImportOpts] Invalid raw. It must not be nil.")
 	}
 
 	// lowLevelKey, err := utils.DERToPrivateKey(der)
@@ -72,19 +72,19 @@ func (*gmsm2PrivateKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bcc
 		return nil, fmt.Errorf("Failed converting to GMSM2 private key [%s]", err)
 	}
 
-	return &gmsm2PrivateKey{gmsm2SK}, nil
+	return &SM2PrivateKey{gmsm2SK}, nil
 }
 
-type gmsm2PublicKeyImportOptsKeyImporter struct{}
+type SM2PublicKeyImportOptsKeyImporter struct{}
 
-func (*gmsm2PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyImportOpts) (k bccsp.Key, err error) {
+func (*SM2PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyImportOpts) (k bccsp.Key, err error) {
 	der, ok := raw.([]byte)
 	if !ok {
-		return nil, errors.New("[GMSM2PublicKeyImportOpts] Invalid raw material. Expected byte array.")
+		return nil, errors.New("[SM2PublicKeyImportOpts] Invalid raw material. Expected byte array.")
 	}
 
 	if len(der) == 0 {
-		return nil, errors.New("[GMSM2PublicKeyImportOpts] Invalid raw. It must not be nil.")
+		return nil, errors.New("[SM2PublicKeyImportOpts] Invalid raw. It must not be nil.")
 	}
 
 	// lowLevelKey, err := utils.DERToPrivateKey(der)
@@ -102,7 +102,7 @@ func (*gmsm2PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccs
 		return nil, fmt.Errorf("Failed converting to GMSM2 public key [%s]", err)
 	}
 
-	return &gmsm2PublicKey{gmsm2SK}, nil
+	return &SM2PublicKey{gmsm2SK}, nil
 }
 
 type x509PublicKeyImportOptsKeyImporter struct {
@@ -190,14 +190,14 @@ func (ki *x509PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bc
 			return nil, errors.New("MarshalSm2PublicKey error")
 		}
 
-		return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.GMSM2PublicKeyImportOpts{})].KeyImport(
+		return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2PublicKeyImportOpts{})].KeyImport(
 			der,
-			&bccsp.GMSM2PublicKeyImportOpts{Temporary: opts.Ephemeral()})
+			&bccsp.SM2PublicKeyImportOpts{Temporary: opts.Ephemeral()})
 	case *sm2.PublicKey:
 		fmt.Printf("bccsp gm keyimport pk is *sm2.PublicKey")
-		return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.GMSM2PublicKeyImportOpts{})].KeyImport(
+		return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2PublicKeyImportOpts{})].KeyImport(
 			pk,
-			&bccsp.GMSM2PublicKeyImportOpts{Temporary: opts.Ephemeral()})
+			&bccsp.SM2PublicKeyImportOpts{Temporary: opts.Ephemeral()})
 	case *ecdsa.PublicKey:
 		return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.ECDSAGoPublicKeyImportOpts{})].KeyImport(
 			pk,
@@ -206,20 +206,20 @@ func (ki *x509PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bc
 		return nil, errors.New("Certificate's public key type not recognized. Supported keys: [GMSM2]")
 	}
 
-	// return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.GMSM2PublicKeyImportOpts{})].KeyImport(
+	// return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2PublicKeyImportOpts{})].KeyImport(
 	// 	pk,
-	// 	&bccsp.GMSM2PublicKeyImportOpts{Temporary:opts.Ephemeral()})
+	// 	&bccsp.SM2PublicKeyImportOpts{Temporary:opts.Ephemeral()})
 
 	// switch pk.(type) {
 	// case *sm2.PublicKey:
 
-	// 	ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.GMSM2PublicKeyImportOpts{})].KeyImport(
+	// 	ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2PublicKeyImportOpts{})].KeyImport(
 	// 		pk,
-	// 		&bccsp.GMSM2PublicKeyImportOpts{Temporary:opts.Ephemeral()})
+	// 		&bccsp.SM2PublicKeyImportOpts{Temporary:opts.Ephemeral()})
 
-	// 	// return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.GMSM2PublicKeyImportOpts{})].KeyImport(
+	// 	// return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2PublicKeyImportOpts{})].KeyImport(
 	// 	// 	pk,
-	// 	// 	&bccsp.GMSM2PublicKeyImportOpts{Temporary: opts.Ephemeral()})
+	// 	// 	&bccsp.SM2PublicKeyImportOpts{Temporary: opts.Ephemeral()})
 	// // case *rsa.PublicKey:
 	// // 	return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.RSAGoPublicKeyImportOpts{})].KeyImport(
 	// // 		pk,

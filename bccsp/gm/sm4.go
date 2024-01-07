@@ -68,28 +68,28 @@ func SM4Decrypt(key, src []byte) ([]byte, error) {
 	return dst, nil
 }
 
-type gmsm4Encryptor struct{}
+type SM4Encryptor struct{}
 
 //实现 Encryptor 接口
-func (*gmsm4Encryptor) Encrypt(k bccsp.Key, plaintext []byte, opts bccsp.EncrypterOpts) (ciphertext []byte, err error) {
+func (*SM4Encryptor) Encrypt(k bccsp.Key, plaintext []byte, opts bccsp.EncrypterOpts) (ciphertext []byte, err error) {
 
-	return SM4Encrypt(k.(*gmsm4PrivateKey).privKey, plaintext)
+	return SM4Encrypt(k.(*SM4PrivateKey).privKey, plaintext)
 	//return AESCBCPKCS7Encrypt(k.(*sm4PrivateKey).privKey, plaintext)
 
-	// key := k.(*gmsm4PrivateKey).privKey
+	// key := k.(*SM4PrivateKey).privKey
 	// var en = make([]byte, 16)
 	// sms4(plaintext, 16, key, en, 1)
 	// return en, nil
 }
 
-type gmsm4Decryptor struct{}
+type SM4Decryptor struct{}
 
 //实现 Decryptor 接口
-func (*gmsm4Decryptor) Decrypt(k bccsp.Key, ciphertext []byte, opts bccsp.DecrypterOpts) (plaintext []byte, err error) {
+func (*SM4Decryptor) Decrypt(k bccsp.Key, ciphertext []byte, opts bccsp.DecrypterOpts) (plaintext []byte, err error) {
 
-	return SM4Decrypt(k.(*gmsm4PrivateKey).privKey, ciphertext)
+	return SM4Decrypt(k.(*SM4PrivateKey).privKey, ciphertext)
 	// var dc = make([]byte, 16)
-	// key := k.(*gmsm4PrivateKey).privKey
+	// key := k.(*SM4PrivateKey).privKey
 	// sms4(ciphertext, 16, key, dc, 0)
 	// return dc, nil
 }

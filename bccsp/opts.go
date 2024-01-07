@@ -272,83 +272,83 @@ func (opts *X509PublicKeyImportOpts) Ephemeral() bool {
 	return opts.Temporary
 }
 
-// GMSM2KeyGenOpts contains options for GMSM2 key generation.
-type GMSM2KeyGenOpts struct {
+// SM2KeyGenOpts contains options for GMSM2 key generation.
+type SM2KeyGenOpts struct {
 	Temporary bool
 }
 
 // Algorithm returns the key generation algorithm identifier (to be used).
-func (opts *GMSM2KeyGenOpts) Algorithm() string {
+func (opts *SM2KeyGenOpts) Algorithm() string {
 	return GMSM2
 }
 
 // Ephemeral returns true if the key to generate has to be ephemeral,
 // false otherwise.
-func (opts *GMSM2KeyGenOpts) Ephemeral() bool {
+func (opts *SM2KeyGenOpts) Ephemeral() bool {
 	return opts.Temporary
 }
 
-// GMSM4KeyGenOpts contains options for GMSM2 key generation.
-type GMSM4KeyGenOpts struct {
+// SM4KeyGenOpts contains options for GMSM2 key generation.
+type SM4KeyGenOpts struct {
 	Temporary bool
 }
 
 // Algorithm returns the key generation algorithm identifier (to be used).
-func (opts *GMSM4KeyGenOpts) Algorithm() string {
+func (opts *SM4KeyGenOpts) Algorithm() string {
 	return GMSM4
 }
 
 // Ephemeral returns true if the key to generate has to be ephemeral,
 // false otherwise.
-func (opts *GMSM4KeyGenOpts) Ephemeral() bool {
+func (opts *SM4KeyGenOpts) Ephemeral() bool {
 	return opts.Temporary
 }
 
 
-//GMSM4ImportKeyOpts  实现  bccsp.KeyImportOpts 接口
-type GMSM4ImportKeyOpts struct {
+//SM4ImportKeyOpts  实现  bccsp.KeyImportOpts 接口
+type SM4ImportKeyOpts struct {
 	Temporary bool
 }
 
 // Algorithm returns the key importation algorithm identifier (to be used).
-func (opts *GMSM4ImportKeyOpts) Algorithm() string {
+func (opts *SM4ImportKeyOpts) Algorithm() string {
 	return GMSM4
 }
 
 // Ephemeral returns true if the key generated has to be ephemeral,
 // false otherwise.
-func (opts *GMSM4ImportKeyOpts) Ephemeral() bool {
+func (opts *SM4ImportKeyOpts) Ephemeral() bool {
 	return opts.Temporary
 }
 
-//GMSM2PrivateKeyImportOpts  实现  bccsp.KeyImportOpts 接口
-type GMSM2PrivateKeyImportOpts struct {
+//SM2PrivateKeyImportOpts  实现  bccsp.KeyImportOpts 接口
+type SM2PrivateKeyImportOpts struct {
 	Temporary bool
 }
 
 // Algorithm returns the key importation algorithm identifier (to be used).
-func (opts *GMSM2PrivateKeyImportOpts) Algorithm() string {
+func (opts *SM2PrivateKeyImportOpts) Algorithm() string {
 	return GMSM2
 }
 
 // Ephemeral returns true if the key generated has to be ephemeral,
 // false otherwise.
-func (opts *GMSM2PrivateKeyImportOpts) Ephemeral() bool {
+func (opts *SM2PrivateKeyImportOpts) Ephemeral() bool {
 	return opts.Temporary
 }
 
-//GMSM2PublicKeyImportOpts  实现  bccsp.KeyImportOpts 接口
-type GMSM2PublicKeyImportOpts struct {
+//SM2PublicKeyImportOpts  实现  bccsp.KeyImportOpts 接口
+type SM2PublicKeyImportOpts struct {
 	Temporary bool
 }
 
 // Algorithm returns the key importation algorithm identifier (to be used).
-func (opts *GMSM2PublicKeyImportOpts) Algorithm() string {
+func (opts *SM2PublicKeyImportOpts) Algorithm() string {
 	return GMSM2
 }
 
 // Ephemeral returns true if the key generated has to be ephemeral,
 // false otherwise.
-func (opts *GMSM2PublicKeyImportOpts) Ephemeral() bool {
+func (opts *SM2PublicKeyImportOpts) Ephemeral() bool {
 	return opts.Temporary
 }

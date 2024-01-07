@@ -73,7 +73,7 @@ func serializeIdentity(clientCert string, mspID string) ([]byte, error) {
 
 func (si *Signer) Sign(msg []byte) ([]byte, error) {
 	digest := util.ComputeGMSM3(msg)
-	return signGMSM2(si.key, digest)
+	return SM2Sign(si.key, digest)
 }
 
 func loadPrivateKey(file string) (*sm2.PrivateKey, error) {
@@ -114,7 +114,7 @@ func parsePrivateKey(der []byte) (crypto.PrivateKey, error) {
 			return key, nil
 }*/
 
-func signGMSM2(k *sm2.PrivateKey, digest []byte) (signature []byte, err error) {
+func SM2Sign(k *sm2.PrivateKey, digest []byte) (signature []byte, err error) {
 	r, s, err := sm2.Sign(k, digest)
 	if err != nil {
 		return nil, err

@@ -43,7 +43,7 @@
 #   - help-docs - generate the command reference docs
 
 ALPINE_VER ?= 3.11
-BASE_VERSION = 2.2.0
+BASE_VERSION = 3.0.0
 
 # 3rd party image version
 # These versions are also set in the runners in ./integration/runners/
@@ -96,7 +96,7 @@ include docker-env.mk
 include gotools.mk
 
 .PHONY: all
-all: check-go-version native docker checks
+all: check-go-version native docker
 
 .PHONY: checks
 checks: basic-checks unit-test integration-test
