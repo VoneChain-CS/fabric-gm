@@ -12,15 +12,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
-	"github.com/VoneChain-CS/fabric-gm/gossip/election"
+	"github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/gossip/election"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
-	"github.com/VoneChain-CS/fabric-gm/gossip/gossip/algo"
+	"github.com/hyperledger/fabric/gossip/comm"
+	"github.com/hyperledger/fabric/gossip/gossip/algo"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/gossip"
+	"github.com/hyperledger/fabric/gossip/gossip"
 	"github.com/spf13/viper"
 )
 

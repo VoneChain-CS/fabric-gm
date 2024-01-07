@@ -14,12 +14,12 @@ import (
 	"time"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/identity"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/localconfig"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/internal/pkg/comm"
+	"github.com/hyperledger/fabric/internal/pkg/identity"
+	"github.com/hyperledger/fabric/orderer/common/localconfig"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 )
 

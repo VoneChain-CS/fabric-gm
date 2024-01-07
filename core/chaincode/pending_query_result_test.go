@@ -9,7 +9,7 @@ package chaincode_test
 import (
 	"fmt"
 
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode"
+	"github.com/hyperledger/fabric/core/chaincode"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
 	. "github.com/onsi/ginkgo"

@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/cmd/common"
-	discovery "github.com/VoneChain-CS/fabric-gm/discovery/cmd"
-	"github.com/VoneChain-CS/fabric-gm/discovery/cmd/mocks"
+	"github.com/hyperledger/fabric/cmd/common"
+	discovery "github.com/hyperledger/fabric/discovery/cmd"
+	"github.com/hyperledger/fabric/discovery/cmd/mocks"
 	. "github.com/hyperledger/fabric-protos-go/discovery"
 	"github.com/hyperledger/fabric-protos-go/msp"
 	"github.com/pkg/errors"

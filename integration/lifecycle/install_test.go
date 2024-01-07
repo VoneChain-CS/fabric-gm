@@ -15,9 +15,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo/fabricconfig"
+	"github.com/hyperledger/fabric/integration/nwo"
+	"github.com/hyperledger/fabric/integration/nwo/commands"
+	"github.com/hyperledger/fabric/integration/nwo/fabricconfig"
 	docker "github.com/fsouza/go-dockerclient"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"
@@ -86,7 +86,7 @@ var _ = Describe("chaincode install", func() {
 				Name:            "failure-external",
 				Version:         "0.0",
 				Lang:            "golang",
-				Path:            "github.com/VoneChain-CS/fabric-gm/integration/chaincode/simple/cmd",
+				Path:            "github.com/hyperledger/fabric/integration/chaincode/simple/cmd",
 				Ctor:            `{"Args":["init","a","100","b","200"]}`,
 				Policy:          `OR ('Org1MSP.member','Org2MSP.member')`,
 				SignaturePolicy: `OR ('Org1MSP.member','Org2MSP.member')`,

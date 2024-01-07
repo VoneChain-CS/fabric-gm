@@ -12,12 +12,12 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/chaincode"
-	"github.com/VoneChain-CS/fabric-gm/common/util"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/persistence"
-	"github.com/VoneChain-CS/fabric-gm/core/container/externalbuilder"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/common/chaincode"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/core/chaincode/persistence"
+	"github.com/hyperledger/fabric/core/container/externalbuilder"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/protoutil"
 	lb "github.com/hyperledger/fabric-protos-go/peer/lifecycle"
 
 	"github.com/pkg/errors"

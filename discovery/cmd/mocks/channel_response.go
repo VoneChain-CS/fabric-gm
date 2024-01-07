@@ -2,7 +2,7 @@
 
 package mocks
 
-import client "github.com/VoneChain-CS/fabric-gm/discovery/client"
+import client "github.com/hyperledger/fabric/discovery/client"
 
 import discovery "github.com/hyperledger/fabric-protos-go/discovery"
 import mock "github.com/stretchr/testify/mock"

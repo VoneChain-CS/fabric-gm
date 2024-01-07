@@ -9,7 +9,7 @@ package comm
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
+	"github.com/hyperledger/fabric/gossip/common"
 )
 
 // ChannelDeMultiplexer is a struct that can receive channel registrations (AddChannel)

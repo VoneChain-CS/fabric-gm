@@ -15,8 +15,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/core/container/ccintf"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
+	"github.com/hyperledger/fabric/core/container/ccintf"
+	"github.com/hyperledger/fabric/internal/pkg/comm"
 	"github.com/pkg/errors"
 )
 

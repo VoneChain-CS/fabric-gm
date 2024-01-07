@@ -9,10 +9,10 @@ package lockbasedtxmgr
 import (
 	"fmt"
 
-	commonledger "github.com/VoneChain-CS/fabric-gm/common/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/rwsetutil"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/txmgr"
+	commonledger "github.com/hyperledger/fabric/common/ledger"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/txmgr"
 	"github.com/pkg/errors"
 )
 

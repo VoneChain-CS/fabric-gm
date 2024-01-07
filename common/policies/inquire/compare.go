@@ -10,7 +10,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
+	"github.com/hyperledger/fabric/common/policies"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/msp"
 )

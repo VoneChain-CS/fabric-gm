@@ -14,12 +14,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/common/util"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/identity"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/peer/blocksprovider"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/peer/orderers"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/internal/pkg/comm"
+	"github.com/hyperledger/fabric/internal/pkg/identity"
+	"github.com/hyperledger/fabric/internal/pkg/peer/blocksprovider"
+	"github.com/hyperledger/fabric/internal/pkg/peer/orderers"
 	"github.com/hyperledger/fabric-protos-go/orderer"
 	"google.golang.org/grpc"
 )

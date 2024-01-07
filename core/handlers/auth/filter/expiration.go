@@ -10,9 +10,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/crypto"
-	"github.com/VoneChain-CS/fabric-gm/core/handlers/auth"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/common/crypto"
+	"github.com/hyperledger/fabric/core/handlers/auth"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 )

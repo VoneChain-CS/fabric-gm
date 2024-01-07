@@ -22,8 +22,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/platforms/util"
-	"github.com/VoneChain-CS/fabric-gm/internal/ccmetadata"
+	"github.com/hyperledger/fabric/core/chaincode/platforms/util"
+	"github.com/hyperledger/fabric/internal/ccmetadata"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"

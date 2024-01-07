@@ -11,9 +11,9 @@ import (
 	"github.com/tjfoc/gmtls"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/msp"
 	"google.golang.org/grpc/credentials"
 	"github.com/tjfoc/gmtls/gmcredentials"
 )

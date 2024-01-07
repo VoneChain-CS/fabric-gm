@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/core/container/ccintf"
+	"github.com/hyperledger/fabric/core/container/ccintf"
 )
 
 type Runtime struct {

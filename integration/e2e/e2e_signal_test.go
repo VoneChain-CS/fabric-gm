@@ -11,7 +11,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
+	"github.com/hyperledger/fabric/integration/nwo"
 	docker "github.com/fsouza/go-dockerclient"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

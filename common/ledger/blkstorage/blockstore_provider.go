@@ -9,12 +9,12 @@ package blkstorage
 import (
 	"os"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/dataformat"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util/leveldbhelper"
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/ledger/dataformat"
+	"github.com/hyperledger/fabric/common/ledger/util"
+	"github.com/hyperledger/fabric/common/ledger/util/leveldbhelper"
+	"github.com/hyperledger/fabric/common/metrics"
+	"github.com/hyperledger/fabric/core/ledger"
 	"github.com/pkg/errors"
 )
 

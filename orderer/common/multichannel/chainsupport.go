@@ -8,15 +8,15 @@ package multichannel
 
 import (
 	cb "github.com/hyperledger/fabric-protos-go/common"
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/identity"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/blockcutter"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/msgprocessor"
-	"github.com/VoneChain-CS/fabric-gm/orderer/consensus"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/ledger/blockledger"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/internal/pkg/identity"
+	"github.com/hyperledger/fabric/orderer/common/blockcutter"
+	"github.com/hyperledger/fabric/orderer/common/msgprocessor"
+	"github.com/hyperledger/fabric/orderer/consensus"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 )
 

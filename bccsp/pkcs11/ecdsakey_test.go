@@ -12,7 +12,7 @@ import (
 	"crypto/x509"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 	"github.com/stretchr/testify/assert"
 )
 

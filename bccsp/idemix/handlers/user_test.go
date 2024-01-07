@@ -8,9 +8,9 @@ package handlers_test
 import (
 	"crypto/sha256"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers"
-	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers/mock"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
+	"github.com/hyperledger/fabric/bccsp/idemix/handlers/mock"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"

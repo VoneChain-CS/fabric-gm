@@ -9,8 +9,8 @@ package privdata
 import (
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )

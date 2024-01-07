@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/dataformat"
+	"github.com/hyperledger/fabric/common/ledger/dataformat"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/iterator"
 )

@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package prometheus
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/hyperledger/fabric/common/metrics"
 	kitmetrics "github.com/go-kit/kit/metrics"
 	"github.com/go-kit/kit/metrics/prometheus"
 	prom "github.com/prometheus/client_golang/prometheus"

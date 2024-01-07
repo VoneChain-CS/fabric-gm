@@ -7,13 +7,13 @@ SPDX-License-Identifier: Apache-2.0
 package support
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/common/configtx"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
-	"github.com/VoneChain-CS/fabric-gm/discovery"
-	"github.com/VoneChain-CS/fabric-gm/discovery/support/acl"
-	"github.com/VoneChain-CS/fabric-gm/discovery/support/config"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/configtx"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/discovery"
+	"github.com/hyperledger/fabric/discovery/support/acl"
+	"github.com/hyperledger/fabric/discovery/support/config"
+	"github.com/hyperledger/fabric/msp"
 )
 
 //go:generate mockery -dir . -name GossipSupport -case underscore -output mocks/

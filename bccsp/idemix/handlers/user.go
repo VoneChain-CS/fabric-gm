@@ -8,7 +8,7 @@ package handlers
 import (
 	"crypto/sha256"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 	"github.com/pkg/errors"
 )
 

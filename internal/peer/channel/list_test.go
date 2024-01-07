@@ -12,8 +12,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/VoneChain-CS/fabric-gm/internal/peer/common"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/internal/peer/common"
+	"github.com/hyperledger/fabric/msp"
 	"github.com/stretchr/testify/assert"
 )
 

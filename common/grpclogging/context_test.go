@@ -10,7 +10,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/grpclogging"
+	"github.com/hyperledger/fabric/common/grpclogging"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"go.uber.org/zap"

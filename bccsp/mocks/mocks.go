@@ -23,7 +23,7 @@ import (
 	"hash"
 	"reflect"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 )
 
 type MockBCCSP struct {

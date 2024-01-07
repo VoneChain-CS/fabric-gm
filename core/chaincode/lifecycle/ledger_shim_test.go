@@ -12,8 +12,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle/mock"
+	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
+	"github.com/hyperledger/fabric/core/chaincode/lifecycle/mock"
 	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
 )
 

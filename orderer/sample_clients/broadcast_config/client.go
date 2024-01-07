@@ -11,9 +11,9 @@ import (
 
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
-	"github.com/VoneChain-CS/fabric-gm/bccsp/factory"
-	mspmgmt "github.com/VoneChain-CS/fabric-gm/msp/mgmt"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/localconfig"
+	"github.com/hyperledger/fabric/bccsp/factory"
+	mspmgmt "github.com/hyperledger/fabric/msp/mgmt"
+	"github.com/hyperledger/fabric/orderer/common/localconfig"
 	"google.golang.org/grpc"
 )
 

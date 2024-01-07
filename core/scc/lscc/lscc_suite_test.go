@@ -9,10 +9,10 @@ package lscc_test
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/common/ccprovider"
-	"github.com/VoneChain-CS/fabric-gm/core/common/sysccprovider"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/scc/lscc"
+	"github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/hyperledger/fabric/core/common/sysccprovider"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/scc/lscc"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

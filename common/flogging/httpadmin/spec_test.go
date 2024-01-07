@@ -12,9 +12,9 @@ import (
 	"net/http/httptest"
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging/httpadmin"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging/httpadmin/fakes"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/flogging/httpadmin"
+	"github.com/hyperledger/fabric/common/flogging/httpadmin/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

@@ -9,9 +9,9 @@ package channelconfig
 import (
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/configtx"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/common/configtx"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/msp"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
 	pb "github.com/hyperledger/fabric-protos-go/peer"

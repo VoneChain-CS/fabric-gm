@@ -9,7 +9,7 @@ package history
 import (
 	"bytes"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util"
+	"github.com/hyperledger/fabric/common/ledger/util"
 	"github.com/pkg/errors"
 )
 

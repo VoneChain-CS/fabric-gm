@@ -10,8 +10,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/localconfig"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/orderer/common/localconfig"
 	"github.com/pkg/errors"
 )
 

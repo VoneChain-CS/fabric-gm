@@ -15,9 +15,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-gm/common/util"
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/integration/nwo/commands"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/peer/lifecycle"

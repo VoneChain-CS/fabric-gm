@@ -9,8 +9,8 @@ package service
 import (
 	"reflect"
 
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/msp"
 	"github.com/hyperledger/fabric-protos-go/peer"
 )
 

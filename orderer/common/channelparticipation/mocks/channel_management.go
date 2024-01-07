@@ -4,7 +4,7 @@ package mocks
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/channelparticipation"
+	"github.com/hyperledger/fabric/orderer/common/channelparticipation"
 )
 
 type ChannelManagement struct {

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/hyperledger/fabric/common/metrics"
 
 	gometrics "github.com/rcrowley/go-metrics"
 )

@@ -9,14 +9,14 @@ package peer
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger/fileledger"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/transientstore"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/ledger/blockledger"
+	"github.com/hyperledger/fabric/common/ledger/blockledger/fileledger"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/transientstore"
+	"github.com/hyperledger/fabric/msp"
 	"github.com/hyperledger/fabric-protos-go/common"
 )
 

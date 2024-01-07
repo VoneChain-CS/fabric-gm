@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	blockledger "github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
+	blockledger "github.com/hyperledger/fabric/common/ledger/blockledger"
 	mock "github.com/stretchr/testify/mock"
 )
 

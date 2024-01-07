@@ -10,11 +10,11 @@ import (
 	"encoding/pem"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/cluster"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/localconfig"
-	"github.com/VoneChain-CS/fabric-gm/orderer/consensus"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/orderer/common/cluster"
+	"github.com/hyperledger/fabric/orderer/common/localconfig"
+	"github.com/hyperledger/fabric/orderer/consensus"
 	"github.com/pkg/errors"
 )
 

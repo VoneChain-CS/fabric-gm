@@ -11,15 +11,15 @@ import (
 	"os"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/privacyenabledstate"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/util"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/privacyenabledstate"
+	"github.com/hyperledger/fabric/core/ledger/util"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	commonledger "github.com/VoneChain-CS/fabric-gm/common/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/queryutil"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/queryutil/mock"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/statedb"
-	statedbmock "github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/statedb/mock"
+	"github.com/hyperledger/fabric/common/flogging"
+	commonledger "github.com/hyperledger/fabric/common/ledger"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/queryutil"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/queryutil/mock"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb"
+	statedbmock "github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb/mock"
 	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
 	"github.com/stretchr/testify/assert"
 )

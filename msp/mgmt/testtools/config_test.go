@@ -9,8 +9,8 @@ package msptesttools
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
-	"github.com/VoneChain-CS/fabric-gm/msp/mgmt"
+	"github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/hyperledger/fabric/msp/mgmt"
 	"github.com/stretchr/testify/assert"
 )
 

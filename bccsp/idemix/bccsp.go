@@ -8,12 +8,12 @@ package idemix
 import (
 	"reflect"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/bridge"
+	"github.com/hyperledger/fabric/bccsp/idemix/bridge"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers"
+	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp/sw"
 	"github.com/pkg/errors"
 )
 

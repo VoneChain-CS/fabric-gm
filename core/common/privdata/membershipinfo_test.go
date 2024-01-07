@@ -9,9 +9,9 @@ package privdata
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/common/policydsl"
-	"github.com/VoneChain-CS/fabric-gm/msp"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/common/policydsl"
+	"github.com/hyperledger/fabric/msp"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/stretchr/testify/assert"
 )

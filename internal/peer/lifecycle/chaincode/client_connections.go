@@ -9,9 +9,9 @@ package chaincode
 import (
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/internal/peer/common"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/identity"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/internal/peer/common"
+	"github.com/hyperledger/fabric/internal/pkg/identity"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
 	tls "github.com/tjfoc/gmtls"

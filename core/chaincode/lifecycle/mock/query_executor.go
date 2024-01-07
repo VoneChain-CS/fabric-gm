@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger"
+	"github.com/hyperledger/fabric/common/ledger"
 )
 
 type SimpleQueryExecutor struct {

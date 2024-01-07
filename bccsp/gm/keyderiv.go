@@ -18,7 +18,7 @@ package gm
 import (
 	"errors"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 )
 
 //定义国密 Key的驱动 ，实现 KeyDeriver 接口

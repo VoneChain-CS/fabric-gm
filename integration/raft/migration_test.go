@@ -16,9 +16,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/integration/nwo"
+	"github.com/hyperledger/fabric/integration/nwo/commands"
+	"github.com/hyperledger/fabric/protoutil"
 	docker "github.com/fsouza/go-dockerclient"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"

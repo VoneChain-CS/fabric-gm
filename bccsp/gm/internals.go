@@ -18,7 +18,7 @@ package gm
 import (
 	"hash"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 )
 
 // KeyGenerator is a BCCSP-like interface that provides key generation algorithms

@@ -4,10 +4,10 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/common/configtx"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/configtx"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/msp"
 )
 
 type Resources struct {

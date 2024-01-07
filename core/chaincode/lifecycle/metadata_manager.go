@@ -9,7 +9,7 @@ package lifecycle
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/chaincode"
+	"github.com/hyperledger/fabric/common/chaincode"
 )
 
 // MetadataUpdateListener runs whenever there is a change to

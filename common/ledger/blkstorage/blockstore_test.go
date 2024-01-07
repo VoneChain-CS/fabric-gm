@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/testutil"
+	"github.com/hyperledger/fabric/common/ledger/testutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

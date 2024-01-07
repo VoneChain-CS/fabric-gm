@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/util"
+	"github.com/hyperledger/fabric/gossip/util"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
 	"github.com/stretchr/testify/assert"
 )

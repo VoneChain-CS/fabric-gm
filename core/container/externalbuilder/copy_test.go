@@ -11,7 +11,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/hyperledger/fabric/common/flogging"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"go.uber.org/zap"

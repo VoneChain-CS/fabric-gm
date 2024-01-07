@@ -18,7 +18,7 @@ package gm
 import (
 	"hash"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 )
 
 //定义hasher 结构体，实现内部的一个 Hasher 接口

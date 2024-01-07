@@ -4,7 +4,7 @@ package mocks
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/core/transientstore"
+	"github.com/hyperledger/fabric/core/transientstore"
 )
 
 type StoreProvider struct {

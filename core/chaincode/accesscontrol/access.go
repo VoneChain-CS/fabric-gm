@@ -10,8 +10,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/VoneChain-CS/fabric-gm/common/crypto/tlsgen"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/hyperledger/fabric/common/crypto/tlsgen"
+	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/golang/protobuf/proto"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"google.golang.org/grpc"

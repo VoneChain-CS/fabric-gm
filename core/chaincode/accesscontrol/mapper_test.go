@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
-	"github.com/VoneChain-CS/fabric-gm/common/crypto/tlsgen"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/hyperledger/fabric/common/crypto/tlsgen"
 	"github.com/stretchr/testify/assert"
 )
 

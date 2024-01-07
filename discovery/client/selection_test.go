@@ -9,7 +9,7 @@ package discovery
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/hyperledger/fabric/gossip/protoext"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/gossip"
 	"github.com/stretchr/testify/assert"

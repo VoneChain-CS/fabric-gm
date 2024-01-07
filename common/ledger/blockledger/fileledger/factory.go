@@ -9,9 +9,9 @@ package fileledger
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blkstorage"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/hyperledger/fabric/common/ledger/blkstorage"
+	"github.com/hyperledger/fabric/common/ledger/blockledger"
+	"github.com/hyperledger/fabric/common/metrics"
 )
 
 type blockStoreProvider interface {

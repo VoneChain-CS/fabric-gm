@@ -7,15 +7,15 @@ SPDX-License-Identifier: Apache-2.0
 package history
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blkstorage"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/dataformat"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util/leveldbhelper"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/rwsetutil"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/txflags"
-	protoutil "github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/ledger/blkstorage"
+	"github.com/hyperledger/fabric/common/ledger/dataformat"
+	"github.com/hyperledger/fabric/common/ledger/util/leveldbhelper"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger/internal/version"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
+	"github.com/hyperledger/fabric/internal/pkg/txflags"
+	protoutil "github.com/hyperledger/fabric/protoutil"
 	"github.com/hyperledger/fabric-protos-go/common"
 )
 

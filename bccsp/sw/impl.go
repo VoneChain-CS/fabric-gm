@@ -19,8 +19,8 @@ import (
 	"hash"
 	"reflect"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/pkg/errors"
 )
 

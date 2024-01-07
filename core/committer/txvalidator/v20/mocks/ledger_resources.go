@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	ledger "github.com/VoneChain-CS/fabric-gm/core/ledger"
+	ledger "github.com/hyperledger/fabric/core/ledger"
 	mock "github.com/stretchr/testify/mock"
 
 	peer "github.com/hyperledger/fabric-protos-go/peer"

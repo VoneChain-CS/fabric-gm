@@ -4,8 +4,8 @@ package mocks
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/policies"
 )
 
 type SigFilterSupport struct {

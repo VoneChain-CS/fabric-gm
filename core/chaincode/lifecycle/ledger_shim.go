@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package lifecycle
 
 import (
-	commonledger "github.com/VoneChain-CS/fabric-gm/common/ledger"
-	validatorstate "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api/state"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	commonledger "github.com/hyperledger/fabric/common/ledger"
+	validatorstate "github.com/hyperledger/fabric/core/handlers/validation/api/state"
+	"github.com/hyperledger/fabric/core/ledger"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
 

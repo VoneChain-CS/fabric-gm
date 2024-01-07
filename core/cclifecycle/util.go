@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package cclifecycle
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/common/chaincode"
-	"github.com/VoneChain-CS/fabric-gm/core/common/ccprovider"
-	"github.com/VoneChain-CS/fabric-gm/core/common/privdata"
+	"github.com/hyperledger/fabric/common/chaincode"
+	"github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/hyperledger/fabric/core/common/privdata"
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 )

@@ -17,7 +17,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm/testpb"
+	"github.com/hyperledger/fabric/internal/pkg/comm/testpb"
 	"github.com/stretchr/testify/assert"
 )
 

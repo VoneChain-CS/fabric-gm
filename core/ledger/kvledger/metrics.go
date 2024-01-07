@@ -9,8 +9,8 @@ package kvledger
 import (
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/txmgr"
+	"github.com/hyperledger/fabric/common/metrics"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/txmgr"
 )
 
 type stats struct {

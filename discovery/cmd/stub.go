@@ -9,11 +9,11 @@ package discovery
 import (
 	"context"
 
-	"github.com/VoneChain-CS/fabric-gm/cmd/common"
-	"github.com/VoneChain-CS/fabric-gm/cmd/common/comm"
-	"github.com/VoneChain-CS/fabric-gm/cmd/common/signer"
-	discoveryclient "github.com/VoneChain-CS/fabric-gm/discovery/client"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/cmd/common"
+	"github.com/hyperledger/fabric/cmd/common/comm"
+	"github.com/hyperledger/fabric/cmd/common/signer"
+	discoveryclient "github.com/hyperledger/fabric/discovery/client"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/hyperledger/fabric-protos-go/discovery"
 	"github.com/pkg/errors"
 )

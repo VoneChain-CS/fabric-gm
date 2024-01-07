@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	channelconfig "github.com/VoneChain-CS/fabric-gm/common/channelconfig"
+	channelconfig "github.com/hyperledger/fabric/common/channelconfig"
 	mock "github.com/stretchr/testify/mock"
 )
 

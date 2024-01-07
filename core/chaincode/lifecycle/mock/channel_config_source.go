@@ -4,8 +4,8 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
 )
 
 type ChannelConfigSource struct {

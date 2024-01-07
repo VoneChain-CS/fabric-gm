@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/msp"
 	mspa "github.com/hyperledger/fabric-protos-go/msp"
 )
 

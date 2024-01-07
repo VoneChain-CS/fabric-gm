@@ -15,9 +15,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-gm/common/chaincode"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/common/util"
+	"github.com/hyperledger/fabric/common/chaincode"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/util"
 
 	"github.com/pkg/errors"
 )

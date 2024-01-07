@@ -7,17 +7,17 @@ SPDX-License-Identifier: Apache-2.0
 package lifecycle_test
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/common/chaincode"
-	"github.com/VoneChain-CS/fabric-gm/common/policydsl"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle/mock"
+	"github.com/hyperledger/fabric/common/chaincode"
+	"github.com/hyperledger/fabric/common/policydsl"
+	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
+	"github.com/hyperledger/fabric/core/chaincode/lifecycle/mock"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/msp"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	lb "github.com/hyperledger/fabric-protos-go/peer/lifecycle"
 	"github.com/pkg/errors"
 
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/protoutil"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

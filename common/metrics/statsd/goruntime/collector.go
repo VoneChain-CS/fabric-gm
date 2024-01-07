@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/hyperledger/fabric/common/metrics"
 )
 
 type Collector struct {

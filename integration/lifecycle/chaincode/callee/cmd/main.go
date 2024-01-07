@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/lifecycle/chaincode/callee"
+	"github.com/hyperledger/fabric/integration/lifecycle/chaincode/callee"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 )
 

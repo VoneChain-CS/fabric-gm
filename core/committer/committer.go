@@ -17,7 +17,7 @@ limitations under the License.
 package committer
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger"
 	"github.com/hyperledger/fabric-protos-go/common"
 )
 

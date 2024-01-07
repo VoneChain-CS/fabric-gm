@@ -9,8 +9,8 @@ package tests
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/txflags"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/internal/pkg/txflags"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"

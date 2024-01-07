@@ -9,7 +9,7 @@ package statecouchdb
 import (
 	"encoding/base64"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
+	"github.com/hyperledger/fabric/core/ledger/internal/version"
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 )

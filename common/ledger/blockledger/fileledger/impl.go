@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package fileledger
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/ledger"
+	"github.com/hyperledger/fabric/common/ledger/blockledger"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
 )

@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/statedb"
+	"github.com/hyperledger/fabric/core/ledger/internal/version"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

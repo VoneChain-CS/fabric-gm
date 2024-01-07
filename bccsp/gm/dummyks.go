@@ -18,7 +18,7 @@ package gm
 import (
 	"errors"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 )
 
 //模拟实现

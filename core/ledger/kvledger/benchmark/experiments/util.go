@@ -13,7 +13,7 @@ import (
 	"math/rand"
 	"strconv"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/hyperledger/fabric/common/flogging"
 )
 
 var logger = flogging.MustGetLogger("experiments")

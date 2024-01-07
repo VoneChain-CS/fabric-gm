@@ -9,9 +9,9 @@ package lockbasedtxmgr
 import (
 	"sort"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/privacyenabledstate"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/statedb"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/util"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/privacyenabledstate"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb"
+	"github.com/hyperledger/fabric/core/ledger/util"
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 )

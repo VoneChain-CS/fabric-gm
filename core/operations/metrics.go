@@ -9,8 +9,8 @@ package operations
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
-	"github.com/VoneChain-CS/fabric-gm/common/metrics/prometheus"
+	"github.com/hyperledger/fabric/common/metrics"
+	"github.com/hyperledger/fabric/common/metrics/prometheus"
 )
 
 var (

@@ -9,7 +9,7 @@ SPDX-License-Identifier: Apache-2.0
 package factory
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 	"github.com/pkg/errors"
 )
 

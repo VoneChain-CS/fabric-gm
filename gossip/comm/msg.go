@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package comm
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/hyperledger/fabric/gossip/protoext"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
 	"github.com/pkg/errors"
 )

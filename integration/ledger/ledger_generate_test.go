@@ -14,7 +14,7 @@ import (
 
 	. "github.com/onsi/ginkgo"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
+	"github.com/hyperledger/fabric/integration/nwo"
 )
 
 // This test generate sample ledger data that can be used to verify rebuild ledger function and upgrade function (in a future release).
@@ -54,7 +54,7 @@ var _ = Describe("sample ledger generation", func() {
 		chaincodemp = nwo.Chaincode{
 			Name:              "marblesp",
 			Version:           "1.0",
-			Path:              components.Build("github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private/cmd"),
+			Path:              components.Build("github.com/hyperledger/fabric/integration/chaincode/marbles_private/cmd"),
 			Lang:              "binary",
 			PackageFile:       filepath.Join(setup.testDir, "marbles-pvtdata.tar.gz"),
 			Label:             "marbles-private-20",
@@ -66,7 +66,7 @@ var _ = Describe("sample ledger generation", func() {
 		chaincodem = nwo.Chaincode{
 			Name:            "marbles",
 			Version:         "0.0",
-			Path:            "github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles/cmd",
+			Path:            "github.com/hyperledger/fabric/integration/chaincode/marbles/cmd",
 			Lang:            "golang",
 			PackageFile:     filepath.Join(setup.testDir, "marbles.tar.gz"),
 			Label:           "marbles",

@@ -9,8 +9,8 @@ package cclifecycle
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/chaincode"
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/hyperledger/fabric/common/chaincode"
+	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/pkg/errors"
 )
 

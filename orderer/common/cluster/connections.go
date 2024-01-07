@@ -11,7 +11,7 @@ import (
 	"github.com/tjfoc/gmsm/sm2"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/hyperledger/fabric/common/metrics"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

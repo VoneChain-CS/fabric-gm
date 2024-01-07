@@ -13,7 +13,7 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator"
+	"github.com/hyperledger/fabric/common/tools/protolator"
 	"github.com/golang/protobuf/proto"
 	"github.com/gorilla/mux"
 )

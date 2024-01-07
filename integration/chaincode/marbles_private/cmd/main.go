@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/chaincode/marbles_private"
+	"github.com/hyperledger/fabric/integration/chaincode/marbles_private"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 )
 

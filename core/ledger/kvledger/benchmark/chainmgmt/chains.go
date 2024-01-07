@@ -12,10 +12,10 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/configtx/test"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/ledgermgmt"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/ledgermgmt/ledgermgmttest"
+	"github.com/hyperledger/fabric/common/configtx/test"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger/ledgermgmt"
+	"github.com/hyperledger/fabric/core/ledger/ledgermgmt/ledgermgmttest"
 	"github.com/hyperledger/fabric-protos-go/common"
 )
 

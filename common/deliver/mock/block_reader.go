@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blockledger"
+	"github.com/hyperledger/fabric/common/ledger/blockledger"
 	"github.com/hyperledger/fabric-protos-go/orderer"
 )
 

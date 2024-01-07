@@ -8,8 +8,8 @@ package bridge
 import (
 	"github.com/tjfoc/gmsm/sm2"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	cryptolib "github.com/VoneChain-CS/fabric-gm/idemix"
+	"github.com/hyperledger/fabric/bccsp"
+	cryptolib "github.com/hyperledger/fabric/idemix"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-amcl/amcl/FP256BN"
 	"github.com/pkg/errors"

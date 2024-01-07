@@ -18,7 +18,7 @@ package sw
 import (
 	"errors"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 )
 
 // NewDummyKeyStore instantiate a dummy key store

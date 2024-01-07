@@ -10,8 +10,8 @@ import (
 	"math/rand"
 	"testing"
 
-	txpkg "github.com/VoneChain-CS/fabric-gm/pkg/tx"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	txpkg "github.com/hyperledger/fabric/pkg/tx"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	. "github.com/onsi/ginkgo"

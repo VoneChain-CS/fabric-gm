@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package chaincode
 
 import (
-	commonledger "github.com/VoneChain-CS/fabric-gm/common/ledger"
+	commonledger "github.com/hyperledger/fabric/common/ledger"
 	"github.com/golang/protobuf/proto"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )

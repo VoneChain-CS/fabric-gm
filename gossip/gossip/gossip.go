@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/gossip/filter"
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/filter"
+	"github.com/hyperledger/fabric/gossip/protoext"
 )
 
 // emittedGossipMessage encapsulates signed gossip message to compose

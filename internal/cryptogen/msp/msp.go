@@ -12,9 +12,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/ca"
-	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/csp"
-	fabricmsp "github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/internal/cryptogen/ca"
+	"github.com/hyperledger/fabric/internal/cryptogen/csp"
+	fabricmsp "github.com/hyperledger/fabric/msp"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v2"
 )

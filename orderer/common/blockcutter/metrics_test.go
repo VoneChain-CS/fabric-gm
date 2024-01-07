@@ -10,8 +10,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/blockcutter"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/blockcutter/mock"
+	"github.com/hyperledger/fabric/orderer/common/blockcutter"
+	"github.com/hyperledger/fabric/orderer/common/blockcutter/mock"
 )
 
 var _ = Describe("Metrics", func() {

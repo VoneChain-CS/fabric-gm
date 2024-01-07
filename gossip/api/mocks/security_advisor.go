@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	api "github.com/VoneChain-CS/fabric-gm/gossip/api"
+	api "github.com/hyperledger/fabric/gossip/api"
 	mock "github.com/stretchr/testify/mock"
 )
 

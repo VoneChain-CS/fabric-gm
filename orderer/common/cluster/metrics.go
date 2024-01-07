@@ -9,7 +9,7 @@ package cluster
 import (
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
+	"github.com/hyperledger/fabric/common/metrics"
 )
 
 var (

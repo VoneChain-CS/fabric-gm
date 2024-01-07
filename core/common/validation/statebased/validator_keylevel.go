@@ -9,11 +9,11 @@ package statebased
 import (
 	"sync"
 
-	commonerrors "github.com/VoneChain-CS/fabric-gm/common/errors"
-	validation "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api/policies"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/rwsetutil"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	commonerrors "github.com/hyperledger/fabric/common/errors"
+	validation "github.com/hyperledger/fabric/core/handlers/validation/api/policies"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"

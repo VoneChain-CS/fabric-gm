@@ -9,7 +9,7 @@ package blkstorage
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger"
+	"github.com/hyperledger/fabric/common/ledger"
 )
 
 // blocksItr - an iterator for iterating over a sequence of blocks

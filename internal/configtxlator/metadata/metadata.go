@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/VoneChain-CS/fabric-gm/internal/cryptogen/metadata"
+	"github.com/hyperledger/fabric/internal/cryptogen/metadata"
 )
 
 const ProgramName = "configtxlator"

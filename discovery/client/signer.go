@@ -10,7 +10,7 @@ import (
 	"encoding/hex"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/util"
+	"github.com/hyperledger/fabric/common/util"
 )
 
 // MemoizeSigner signs messages with the same signature

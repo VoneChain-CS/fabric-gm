@@ -4,8 +4,8 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
 )
 
 type ChannelPolicyReferenceProvider struct {

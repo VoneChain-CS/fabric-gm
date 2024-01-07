@@ -12,8 +12,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp"
-	"github.com/VoneChain-CS/fabric-gm/bccsp/factory"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp/factory"
 	"github.com/golang/protobuf/ptypes/timestamp"
 )
 

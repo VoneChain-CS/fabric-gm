@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	chaincode "github.com/VoneChain-CS/fabric-gm/common/chaincode"
+	chaincode "github.com/hyperledger/fabric/common/chaincode"
 	mock "github.com/stretchr/testify/mock"
 )
 

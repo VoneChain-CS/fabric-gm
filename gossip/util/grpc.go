@@ -15,10 +15,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/crypto/tlsgen"
-	"github.com/VoneChain-CS/fabric-gm/gossip/api"
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
+	"github.com/hyperledger/fabric/common/crypto/tlsgen"
+	"github.com/hyperledger/fabric/gossip/api"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/internal/pkg/comm"
 	"google.golang.org/grpc"
 )
 

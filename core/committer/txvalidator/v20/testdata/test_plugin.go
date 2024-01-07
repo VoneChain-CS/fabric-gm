@@ -9,12 +9,12 @@ package testdata
 import (
 	"testing"
 
-	validation "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api"
-	. "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api/capabilities"
-	. "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api/identities"
-	. "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api/policies"
-	. "github.com/VoneChain-CS/fabric-gm/core/handlers/validation/api/state"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	validation "github.com/hyperledger/fabric/core/handlers/validation/api"
+	. "github.com/hyperledger/fabric/core/handlers/validation/api/capabilities"
+	. "github.com/hyperledger/fabric/core/handlers/validation/api/identities"
+	. "github.com/hyperledger/fabric/core/handlers/validation/api/policies"
+	. "github.com/hyperledger/fabric/core/handlers/validation/api/state"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/pkg/errors"

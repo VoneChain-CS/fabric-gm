@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/crypto/tlsgen"
-	"github.com/VoneChain-CS/fabric-gm/common/util"
+	"github.com/hyperledger/fabric/common/crypto/tlsgen"
+	"github.com/hyperledger/fabric/common/util"
 	credentials "github.com/tjfoc/gmtls/gmcredentials"
 	"google.golang.org/grpc/peer"
 )

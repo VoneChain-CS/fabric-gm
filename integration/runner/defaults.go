@@ -9,7 +9,7 @@ package runner
 import (
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/helpers"
+	"github.com/hyperledger/fabric/integration/helpers"
 )
 
 const DefaultStartTimeout = 45 * time.Second

@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/msp"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	mb "github.com/hyperledger/fabric-protos-go/msp"
 	"go.uber.org/zap/zapcore"

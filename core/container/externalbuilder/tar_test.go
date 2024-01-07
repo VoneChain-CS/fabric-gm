@@ -13,7 +13,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/VoneChain-CS/fabric-gm/core/container/externalbuilder"
+	"github.com/hyperledger/fabric/core/container/externalbuilder"
 )
 
 var _ = Describe("Tar", func() {

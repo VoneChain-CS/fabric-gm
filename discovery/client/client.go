@@ -13,8 +13,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/discovery/protoext"
-	gprotoext "github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/hyperledger/fabric/discovery/protoext"
+	gprotoext "github.com/hyperledger/fabric/gossip/protoext"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/discovery"
 	"github.com/hyperledger/fabric-protos-go/msp"

@@ -9,7 +9,7 @@ package encoder_test
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/factory"
+	"github.com/hyperledger/fabric/bccsp/factory"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

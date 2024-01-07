@@ -10,7 +10,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/config/configtest"
+	"github.com/hyperledger/fabric/core/config/configtest"
 	"github.com/hyperledger/fabric-protos-go/orderer/etcdraft"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"

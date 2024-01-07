@@ -9,7 +9,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger"
 )
 
 func TestMissingCollConfig(t *testing.T) {

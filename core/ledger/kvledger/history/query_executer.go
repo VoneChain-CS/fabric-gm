@@ -7,11 +7,11 @@ SPDX-License-Identifier: Apache-2.0
 package history
 
 import (
-	commonledger "github.com/VoneChain-CS/fabric-gm/common/ledger"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/blkstorage"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util/leveldbhelper"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/rwsetutil"
-	protoutil "github.com/VoneChain-CS/fabric-gm/protoutil"
+	commonledger "github.com/hyperledger/fabric/common/ledger"
+	"github.com/hyperledger/fabric/common/ledger/blkstorage"
+	"github.com/hyperledger/fabric/common/ledger/util/leveldbhelper"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
+	protoutil "github.com/hyperledger/fabric/protoutil"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
 	"github.com/pkg/errors"

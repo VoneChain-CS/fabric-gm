@@ -9,8 +9,8 @@ package util
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/protoext"
 )
 
 // MembershipStore struct which encapsulates

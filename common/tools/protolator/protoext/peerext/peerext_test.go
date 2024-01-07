@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package peerext_test
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator"
-	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/protoext/peerext"
+	"github.com/hyperledger/fabric/common/tools/protolator"
+	"github.com/hyperledger/fabric/common/tools/protolator/protoext/peerext"
 )
 
 // ensure structs implement expected interfaces

@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	mspa "github.com/hyperledger/fabric-protos-go/msp"
-	"github.com/VoneChain-CS/fabric-gm/msp"
+	"github.com/hyperledger/fabric/msp"
 )
 
 type MSP struct {

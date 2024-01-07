@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package testdata
 
 import (
-	goo "github.com/VoneChain-CS/fabric-gm/common/metrics"
+	goo "github.com/hyperledger/fabric/common/metrics"
 )
 
 // These variables should be discovered as valid metric options

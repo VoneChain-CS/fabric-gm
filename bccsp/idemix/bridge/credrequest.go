@@ -8,8 +8,8 @@ package bridge
 import (
 	"bytes"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers"
-	cryptolib "github.com/VoneChain-CS/fabric-gm/idemix"
+	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
+	cryptolib "github.com/hyperledger/fabric/idemix"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-amcl/amcl"
 	"github.com/pkg/errors"

@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package endorser
 
 import (
-	endorsement "github.com/VoneChain-CS/fabric-gm/core/handlers/endorsement/api/state"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/transientstore"
+	endorsement "github.com/hyperledger/fabric/core/handlers/endorsement/api/state"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/transientstore"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
 	"github.com/pkg/errors"
 )

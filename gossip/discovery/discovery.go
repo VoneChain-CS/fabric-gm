@@ -9,8 +9,8 @@ package discovery
 import (
 	"fmt"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/protoext"
 	protolib "github.com/golang/protobuf/proto"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
 )

@@ -9,10 +9,10 @@ package chaincode_test
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/mock"
-	"github.com/VoneChain-CS/fabric-gm/core/container"
-	"github.com/VoneChain-CS/fabric-gm/core/container/ccintf"
+	"github.com/hyperledger/fabric/core/chaincode"
+	"github.com/hyperledger/fabric/core/chaincode/mock"
+	"github.com/hyperledger/fabric/core/container"
+	"github.com/hyperledger/fabric/core/container/ccintf"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"

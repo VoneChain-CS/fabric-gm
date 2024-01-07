@@ -10,7 +10,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/common/semaphore"
+	"github.com/hyperledger/fabric/common/semaphore"
 	. "github.com/onsi/gomega"
 	"github.com/stretchr/testify/assert"
 )

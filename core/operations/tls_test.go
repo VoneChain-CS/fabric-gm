@@ -13,7 +13,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/VoneChain-CS/fabric-gm/core/operations"
+	"github.com/hyperledger/fabric/core/operations"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

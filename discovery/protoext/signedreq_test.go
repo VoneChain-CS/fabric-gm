@@ -9,7 +9,7 @@ package protoext_test
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/discovery/protoext"
+	"github.com/hyperledger/fabric/discovery/protoext"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/discovery"
 	"github.com/stretchr/testify/assert"

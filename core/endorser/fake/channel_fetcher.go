@@ -4,7 +4,7 @@ package fake
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/core/endorser"
+	"github.com/hyperledger/fabric/core/endorser"
 )
 
 type ChannelFetcher struct {

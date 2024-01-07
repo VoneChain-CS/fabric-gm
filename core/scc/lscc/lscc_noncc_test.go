@@ -9,11 +9,11 @@ package lscc_test
 import (
 	"errors"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
-	"github.com/VoneChain-CS/fabric-gm/core/common/ccprovider"
-	"github.com/VoneChain-CS/fabric-gm/core/scc/lscc"
-	"github.com/VoneChain-CS/fabric-gm/core/scc/lscc/mock"
+	"github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
+	"github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/hyperledger/fabric/core/scc/lscc"
+	"github.com/hyperledger/fabric/core/scc/lscc/mock"
 	"github.com/golang/protobuf/proto"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

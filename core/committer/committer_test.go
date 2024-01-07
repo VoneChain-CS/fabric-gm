@@ -9,10 +9,10 @@ package committer
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/common/configtx/test"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/testutil"
-	ledger2 "github.com/VoneChain-CS/fabric-gm/core/ledger"
+	"github.com/hyperledger/fabric/common/configtx/test"
+	"github.com/hyperledger/fabric/common/ledger"
+	"github.com/hyperledger/fabric/common/ledger/testutil"
+	ledger2 "github.com/hyperledger/fabric/core/ledger"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/stretchr/testify/assert"

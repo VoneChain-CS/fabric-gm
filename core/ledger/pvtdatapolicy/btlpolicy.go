@@ -10,7 +10,7 @@ import (
 	"math"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/core/common/privdata"
+	"github.com/hyperledger/fabric/core/common/privdata"
 	"github.com/hyperledger/fabric-protos-go/peer"
 )
 

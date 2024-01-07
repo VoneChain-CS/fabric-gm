@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/common/tools/protolator/testprotos"
+	"github.com/hyperledger/fabric/common/tools/protolator/testprotos"
 	"github.com/stretchr/testify/assert"
 )
 

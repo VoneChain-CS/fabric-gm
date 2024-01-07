@@ -5,11 +5,11 @@ import (
 	"sync"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/blockcutter"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/msgprocessor"
-	"github.com/VoneChain-CS/fabric-gm/orderer/consensus"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/orderer/common/blockcutter"
+	"github.com/hyperledger/fabric/orderer/common/msgprocessor"
+	"github.com/hyperledger/fabric/orderer/consensus"
+	"github.com/hyperledger/fabric/protoutil"
 )
 
 type FakeConsenterSupport struct {

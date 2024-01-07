@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/chaincode"
+	"github.com/hyperledger/fabric/common/chaincode"
 )
 
 type MetadataHandler struct {

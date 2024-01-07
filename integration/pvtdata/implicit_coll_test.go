@@ -13,9 +13,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/chaincode/kvexecutor"
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
+	"github.com/hyperledger/fabric/integration/chaincode/kvexecutor"
+	"github.com/hyperledger/fabric/integration/nwo"
+	"github.com/hyperledger/fabric/integration/nwo/commands"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
@@ -64,7 +64,7 @@ var _ bool = Describe("Pvtdata dissemination for implicit collection", func() {
 			Chaincode: nwo.Chaincode{
 				Name:        "kvexecutor",
 				Version:     "1.0",
-				Path:        components.Build("github.com/VoneChain-CS/fabric-gm/integration/chaincode/kvexecutor/cmd"),
+				Path:        components.Build("github.com/hyperledger/fabric/integration/chaincode/kvexecutor/cmd"),
 				Lang:        "binary",
 				PackageFile: filepath.Join(network.RootDir, "kvexcutor.tar.gz"),
 				Label:       "kvexcutor",

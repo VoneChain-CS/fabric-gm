@@ -12,12 +12,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
-	"github.com/VoneChain-CS/fabric-gm/common/configtx/test"
-	"github.com/VoneChain-CS/fabric-gm/common/metrics/disabled"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/cceventmgmt"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/mock"
+	"github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/hyperledger/fabric/common/configtx/test"
+	"github.com/hyperledger/fabric/common/metrics/disabled"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger/cceventmgmt"
+	"github.com/hyperledger/fabric/core/ledger/mock"
 	"github.com/stretchr/testify/assert"
 )
 

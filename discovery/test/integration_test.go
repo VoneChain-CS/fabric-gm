@@ -23,34 +23,34 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
-	bccsp "github.com/VoneChain-CS/fabric-gm/bccsp/utils"
-	"github.com/VoneChain-CS/fabric-gm/common/cauthdsl"
-	"github.com/VoneChain-CS/fabric-gm/common/configtx"
-	"github.com/VoneChain-CS/fabric-gm/common/crypto/tlsgen"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
-	"github.com/VoneChain-CS/fabric-gm/common/policydsl"
-	"github.com/VoneChain-CS/fabric-gm/common/util"
-	"github.com/VoneChain-CS/fabric-gm/core/cclifecycle"
-	lifecyclemocks "github.com/VoneChain-CS/fabric-gm/core/cclifecycle/mocks"
-	"github.com/VoneChain-CS/fabric-gm/core/common/ccprovider"
-	"github.com/VoneChain-CS/fabric-gm/discovery"
-	disc "github.com/VoneChain-CS/fabric-gm/discovery/client"
-	"github.com/VoneChain-CS/fabric-gm/discovery/endorsement"
-	discsupport "github.com/VoneChain-CS/fabric-gm/discovery/support"
-	discacl "github.com/VoneChain-CS/fabric-gm/discovery/support/acl"
-	ccsupport "github.com/VoneChain-CS/fabric-gm/discovery/support/chaincode"
-	"github.com/VoneChain-CS/fabric-gm/discovery/support/config"
-	"github.com/VoneChain-CS/fabric-gm/discovery/support/mocks"
-	"github.com/VoneChain-CS/fabric-gm/gossip/api"
-	gcommon "github.com/VoneChain-CS/fabric-gm/gossip/common"
-	gdisc "github.com/VoneChain-CS/fabric-gm/gossip/discovery"
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
-	"github.com/VoneChain-CS/fabric-gm/internal/configtxgen/encoder"
-	"github.com/VoneChain-CS/fabric-gm/internal/configtxgen/genesisconfig"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
-	"github.com/VoneChain-CS/fabric-gm/msp"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/bccsp/sw"
+	bccsp "github.com/hyperledger/fabric/bccsp/utils"
+	"github.com/hyperledger/fabric/common/cauthdsl"
+	"github.com/hyperledger/fabric/common/configtx"
+	"github.com/hyperledger/fabric/common/crypto/tlsgen"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/common/policydsl"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/core/cclifecycle"
+	lifecyclemocks "github.com/hyperledger/fabric/core/cclifecycle/mocks"
+	"github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/hyperledger/fabric/discovery"
+	disc "github.com/hyperledger/fabric/discovery/client"
+	"github.com/hyperledger/fabric/discovery/endorsement"
+	discsupport "github.com/hyperledger/fabric/discovery/support"
+	discacl "github.com/hyperledger/fabric/discovery/support/acl"
+	ccsupport "github.com/hyperledger/fabric/discovery/support/chaincode"
+	"github.com/hyperledger/fabric/discovery/support/config"
+	"github.com/hyperledger/fabric/discovery/support/mocks"
+	"github.com/hyperledger/fabric/gossip/api"
+	gcommon "github.com/hyperledger/fabric/gossip/common"
+	gdisc "github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/hyperledger/fabric/internal/configtxgen/encoder"
+	"github.com/hyperledger/fabric/internal/configtxgen/genesisconfig"
+	"github.com/hyperledger/fabric/internal/pkg/comm"
+	"github.com/hyperledger/fabric/msp"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	. "github.com/hyperledger/fabric-protos-go/discovery"
@@ -621,12 +621,12 @@ func createPolicyManagerGetter(t *testing.T, mspMgr msp.MSPManager) *mocks.Chann
 
 func buildBinaries() error {
 	var err error
-	cryptogen, err = gexec.Build("github.com/VoneChain-CS/fabric-gm/cmd/cryptogen")
+	cryptogen, err = gexec.Build("github.com/hyperledger/fabric/cmd/cryptogen")
 	if err != nil {
 		return errors.WithStack(err)
 	}
 
-	idemixgen, err = gexec.Build("github.com/VoneChain-CS/fabric-gm/cmd/idemixgen")
+	idemixgen, err = gexec.Build("github.com/hyperledger/fabric/cmd/idemixgen")
 	if err != nil {
 		return errors.WithStack(err)
 	}

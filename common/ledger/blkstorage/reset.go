@@ -13,7 +13,7 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util"
+	"github.com/hyperledger/fabric/common/ledger/util"
 )
 
 // ResetBlockStore drops the block storage index and truncates the blocks files for all channels/ledgers to genesis blocks

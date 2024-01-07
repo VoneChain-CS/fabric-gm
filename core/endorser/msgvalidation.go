@@ -9,9 +9,9 @@ package endorser
 import (
 	"github.com/tjfoc/gmsm/sm3"
 
-	"github.com/VoneChain-CS/fabric-gm/core/common/ccprovider"
-	"github.com/VoneChain-CS/fabric-gm/msp"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/hyperledger/fabric/msp"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	cb "github.com/hyperledger/fabric-protos-go/common"

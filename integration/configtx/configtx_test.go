@@ -16,8 +16,8 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo"
-	"github.com/VoneChain-CS/fabric-gm/integration/nwo/commands"
+	"github.com/hyperledger/fabric/integration/nwo"
+	"github.com/hyperledger/fabric/integration/nwo/commands"
 	docker "github.com/fsouza/go-dockerclient"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-config/configtx"

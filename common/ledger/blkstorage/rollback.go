@@ -9,9 +9,9 @@ package blkstorage
 import (
 	"os"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util"
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util/leveldbhelper"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/common/ledger/util"
+	"github.com/hyperledger/fabric/common/ledger/util/leveldbhelper"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 )
 

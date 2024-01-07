@@ -6,10 +6,10 @@ SPDX-License-Identifier: Apache-2.0
 package bridge
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/bccsp/idemix/handlers"
+	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
 	"github.com/hyperledger/fabric-amcl/amcl"
 
-	cryptolib "github.com/VoneChain-CS/fabric-gm/idemix"
+	cryptolib "github.com/hyperledger/fabric/idemix"
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 )

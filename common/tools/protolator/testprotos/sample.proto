@@ -16,7 +16,7 @@ limitations under the License.
 
 syntax = "proto3";
 
-option go_package = "github.com/VoneChain-CS/fabric-gm/common/tools/protolator/testprotos";
+option go_package = "github.com/hyperledger/fabric/common/tools/protolator/testprotos";
 
 package testprotos;
 

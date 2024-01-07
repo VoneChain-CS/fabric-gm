@@ -15,14 +15,14 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
-	"github.com/VoneChain-CS/fabric-gm/common/configtx"
-	"github.com/VoneChain-CS/fabric-gm/common/configtx/test"
-	"github.com/VoneChain-CS/fabric-gm/discovery/support/config"
-	"github.com/VoneChain-CS/fabric-gm/discovery/support/mocks"
-	"github.com/VoneChain-CS/fabric-gm/internal/configtxgen/encoder"
-	"github.com/VoneChain-CS/fabric-gm/internal/configtxgen/genesisconfig"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/configtx"
+	"github.com/hyperledger/fabric/common/configtx/test"
+	"github.com/hyperledger/fabric/discovery/support/config"
+	"github.com/hyperledger/fabric/discovery/support/mocks"
+	"github.com/hyperledger/fabric/internal/configtxgen/encoder"
+	"github.com/hyperledger/fabric/internal/configtxgen/genesisconfig"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/discovery"
@@ -70,11 +70,11 @@ func TestMSPIDMapping(t *testing.T) {
 	os.Mkdir(dir, 0700)
 	defer os.RemoveAll(dir)
 
-	cryptogen, err := gexec.Build("github.com/VoneChain-CS/fabric-gm/cmd/cryptogen")
+	cryptogen, err := gexec.Build("github.com/hyperledger/fabric/cmd/cryptogen")
 	assert.NoError(t, err)
 	defer os.Remove(cryptogen)
 
-	idemixgen, err := gexec.Build("github.com/VoneChain-CS/fabric-gm/cmd/idemixgen")
+	idemixgen, err := gexec.Build("github.com/hyperledger/fabric/cmd/idemixgen")
 	assert.NoError(t, err)
 	defer os.Remove(idemixgen)
 

@@ -23,7 +23,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/mocks"
+	"github.com/hyperledger/fabric/bccsp/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

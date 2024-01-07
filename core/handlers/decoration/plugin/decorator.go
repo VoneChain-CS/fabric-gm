@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package main
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/core/handlers/decoration"
+	"github.com/hyperledger/fabric/core/handlers/decoration"
 	"github.com/hyperledger/fabric-protos-go/peer"
 )
 

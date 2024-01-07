@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/cmd/common"
-	"github.com/VoneChain-CS/fabric-gm/cmd/common/comm"
-	"github.com/VoneChain-CS/fabric-gm/cmd/common/signer"
-	discovery "github.com/VoneChain-CS/fabric-gm/discovery/client"
-	corecomm "github.com/VoneChain-CS/fabric-gm/internal/pkg/comm"
+	"github.com/hyperledger/fabric/cmd/common"
+	"github.com/hyperledger/fabric/cmd/common/comm"
+	"github.com/hyperledger/fabric/cmd/common/signer"
+	discovery "github.com/hyperledger/fabric/discovery/client"
+	corecomm "github.com/hyperledger/fabric/internal/pkg/comm"
 	"github.com/stretchr/testify/assert"
 )
 

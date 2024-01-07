@@ -9,9 +9,9 @@ package builtin_test
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/endorser/mocks"
-	"github.com/VoneChain-CS/fabric-gm/core/handlers/endorsement/builtin"
-	mocks2 "github.com/VoneChain-CS/fabric-gm/core/handlers/endorsement/builtin/mocks"
+	"github.com/hyperledger/fabric/core/endorser/mocks"
+	"github.com/hyperledger/fabric/core/handlers/endorsement/builtin"
+	mocks2 "github.com/hyperledger/fabric/core/handlers/endorsement/builtin/mocks"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"

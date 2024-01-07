@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/deliver"
+	"github.com/hyperledger/fabric/common/deliver"
 	"github.com/hyperledger/fabric-protos-go/common"
 )
 

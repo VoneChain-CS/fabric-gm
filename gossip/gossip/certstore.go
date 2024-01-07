@@ -10,12 +10,12 @@ import (
 	"bytes"
 	"encoding/hex"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/api"
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/gossip/gossip/pull"
-	"github.com/VoneChain-CS/fabric-gm/gossip/identity"
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
-	"github.com/VoneChain-CS/fabric-gm/gossip/util"
+	"github.com/hyperledger/fabric/gossip/api"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/gossip/pull"
+	"github.com/hyperledger/fabric/gossip/identity"
+	"github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/hyperledger/fabric/gossip/util"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
 	"github.com/pkg/errors"
 )

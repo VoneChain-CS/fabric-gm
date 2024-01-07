@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics/disabled"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/bookkeeping"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/statedb/statecouchdb"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/mock"
+	"github.com/hyperledger/fabric/common/metrics/disabled"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/bookkeeping"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb/statecouchdb"
+	"github.com/hyperledger/fabric/core/ledger/mock"
 	"github.com/stretchr/testify/assert"
 )
 

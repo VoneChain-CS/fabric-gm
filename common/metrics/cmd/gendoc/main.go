@@ -13,7 +13,7 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics/gendoc"
+	"github.com/hyperledger/fabric/common/metrics/gendoc"
 	"golang.org/x/tools/go/packages"
 )
 
@@ -32,7 +32,7 @@ func main() {
 
 	patterns := flag.Args()
 	if len(patterns) == 0 {
-		patterns = []string{"github.com/VoneChain-CS/fabric-gm/..."}
+		patterns = []string{"github.com/hyperledger/fabric/..."}
 	}
 
 	pkgs, err := packages.Load(&packages.Config{Mode: packages.LoadSyntax}, patterns...)

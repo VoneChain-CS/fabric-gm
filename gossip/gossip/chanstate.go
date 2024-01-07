@@ -11,13 +11,13 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/api"
-	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
-	"github.com/VoneChain-CS/fabric-gm/gossip/gossip/channel"
-	"github.com/VoneChain-CS/fabric-gm/gossip/metrics"
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
+	"github.com/hyperledger/fabric/gossip/api"
+	"github.com/hyperledger/fabric/gossip/comm"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/gossip/gossip/channel"
+	"github.com/hyperledger/fabric/gossip/metrics"
+	"github.com/hyperledger/fabric/gossip/protoext"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
 )
 

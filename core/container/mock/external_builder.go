@@ -5,7 +5,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/core/container"
+	"github.com/hyperledger/fabric/core/container"
 )
 
 type ExternalBuilder struct {

@@ -14,11 +14,11 @@ import (
 
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
-	"github.com/VoneChain-CS/fabric-gm/core/config/configtest"
-	"github.com/VoneChain-CS/fabric-gm/internal/peer/common/mock"
-	"github.com/VoneChain-CS/fabric-gm/internal/pkg/identity"
-	msptesttools "github.com/VoneChain-CS/fabric-gm/msp/mgmt/testtools"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/core/config/configtest"
+	"github.com/hyperledger/fabric/internal/peer/common/mock"
+	"github.com/hyperledger/fabric/internal/pkg/identity"
+	msptesttools "github.com/hyperledger/fabric/msp/mgmt/testtools"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

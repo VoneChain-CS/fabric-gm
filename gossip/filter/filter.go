@@ -9,9 +9,9 @@ package filter
 import (
 	"math/rand"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
-	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
-	"github.com/VoneChain-CS/fabric-gm/gossip/util"
+	"github.com/hyperledger/fabric/gossip/comm"
+	"github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/gossip/util"
 )
 
 func init() { // do we really need this?

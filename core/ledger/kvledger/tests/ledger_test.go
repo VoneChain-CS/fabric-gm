@@ -11,8 +11,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	msptesttools "github.com/VoneChain-CS/fabric-gm/msp/mgmt/testtools"
+	"github.com/hyperledger/fabric/common/flogging"
+	msptesttools "github.com/hyperledger/fabric/msp/mgmt/testtools"
 )
 
 func TestMain(m *testing.M) {

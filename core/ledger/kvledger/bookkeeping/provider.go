@@ -9,7 +9,7 @@ package bookkeeping
 import (
 	"fmt"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/util/leveldbhelper"
+	"github.com/hyperledger/fabric/common/ledger/util/leveldbhelper"
 )
 
 // Category is an enum type for representing the bookkeeping of different type

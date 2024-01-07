@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
+	"github.com/hyperledger/fabric/gossip/comm"
 )
 
 var matchAnything = func(_ interface{}) bool { return true }

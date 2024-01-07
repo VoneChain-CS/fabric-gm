@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/VoneChain-CS/fabric-gm/integration/chaincode/kvexecutor"
+	"github.com/hyperledger/fabric/integration/chaincode/kvexecutor"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 )
 

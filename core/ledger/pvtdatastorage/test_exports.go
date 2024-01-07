@@ -11,8 +11,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/pvtdatapolicy"
+	"github.com/hyperledger/fabric/core/ledger"
+	"github.com/hyperledger/fabric/core/ledger/pvtdatapolicy"
 	"github.com/stretchr/testify/assert"
 )
 

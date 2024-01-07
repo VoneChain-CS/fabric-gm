@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	mockpolicies "github.com/VoneChain-CS/fabric-gm/common/configtx/mock"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	mockpolicies "github.com/hyperledger/fabric/common/configtx/mock"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/protoutil"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	"github.com/stretchr/testify/assert"
 )

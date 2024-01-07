@@ -9,8 +9,8 @@ package privacyenabledstate
 import (
 	"fmt"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/internal/version"
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/txmgmt/statedb"
+	"github.com/hyperledger/fabric/core/ledger/internal/version"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb"
 )
 
 // PvtdataCompositeKey encloses Namespace, CollectionName and Key components

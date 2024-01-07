@@ -4,7 +4,7 @@ package fake
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/common/channelconfig"
+	"github.com/hyperledger/fabric/common/channelconfig"
 )
 
 type ApplicationConfigRetriever struct {

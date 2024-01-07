@@ -13,9 +13,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/channelparticipation"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/channelparticipation/mocks"
-	"github.com/VoneChain-CS/fabric-gm/orderer/common/localconfig"
+	"github.com/hyperledger/fabric/orderer/common/channelparticipation"
+	"github.com/hyperledger/fabric/orderer/common/channelparticipation/mocks"
+	"github.com/hyperledger/fabric/orderer/common/localconfig"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

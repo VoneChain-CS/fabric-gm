@@ -9,11 +9,11 @@ package mock
 import (
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/api"
-	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
-	"github.com/VoneChain-CS/fabric-gm/gossip/util"
+	"github.com/hyperledger/fabric/gossip/api"
+	"github.com/hyperledger/fabric/gossip/comm"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/hyperledger/fabric/gossip/util"
 	proto "github.com/hyperledger/fabric-protos-go/gossip"
 )
 

@@ -9,7 +9,7 @@ package main
 import (
 	"context"
 
-	"github.com/VoneChain-CS/fabric-gm/core/handlers/auth"
+	"github.com/hyperledger/fabric/core/handlers/auth"
 	"github.com/hyperledger/fabric-protos-go/peer"
 )
 

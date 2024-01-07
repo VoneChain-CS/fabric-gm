@@ -11,9 +11,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/common/ledger/dataformat"
+	"github.com/hyperledger/fabric/common/ledger/dataformat"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
+	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/stretchr/testify/assert"
 )
 

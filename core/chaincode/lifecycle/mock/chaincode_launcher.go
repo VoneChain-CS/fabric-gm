@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/lifecycle"
+	"github.com/hyperledger/fabric/core/chaincode/lifecycle"
 )
 
 type ChaincodeLauncher struct {

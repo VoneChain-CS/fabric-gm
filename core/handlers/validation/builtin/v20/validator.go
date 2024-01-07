@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package v20
 
 import (
-	commonerrors "github.com/VoneChain-CS/fabric-gm/common/errors"
+	commonerrors "github.com/hyperledger/fabric/common/errors"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/peer"
 )

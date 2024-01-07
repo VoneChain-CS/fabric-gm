@@ -8,9 +8,9 @@ package chaincode_test
 
 import (
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/VoneChain-CS/fabric-gm/bccsp/sw"
-	"github.com/VoneChain-CS/fabric-gm/internal/peer/lifecycle/chaincode"
-	"github.com/VoneChain-CS/fabric-gm/internal/peer/lifecycle/chaincode/mock"
+	"github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/hyperledger/fabric/internal/peer/lifecycle/chaincode"
+	"github.com/hyperledger/fabric/internal/peer/lifecycle/chaincode/mock"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 

@@ -9,7 +9,7 @@ package protoext
 import (
 	"bytes"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
+	"github.com/hyperledger/fabric/gossip/common"
 	"github.com/hyperledger/fabric-protos-go/gossip"
 )
 

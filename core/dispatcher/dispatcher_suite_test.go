@@ -9,7 +9,7 @@ package dispatcher_test
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/dispatcher"
+	"github.com/hyperledger/fabric/core/dispatcher"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

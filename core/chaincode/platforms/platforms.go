@@ -14,12 +14,12 @@ import (
 	"io"
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-gm/common/flogging"
-	"github.com/VoneChain-CS/fabric-gm/common/metadata"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/platforms/golang"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/platforms/java"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/platforms/node"
-	"github.com/VoneChain-CS/fabric-gm/core/chaincode/platforms/util"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/metadata"
+	"github.com/hyperledger/fabric/core/chaincode/platforms/golang"
+	"github.com/hyperledger/fabric/core/chaincode/platforms/java"
+	"github.com/hyperledger/fabric/core/chaincode/platforms/node"
+	"github.com/hyperledger/fabric/core/chaincode/platforms/util"
 	docker "github.com/fsouza/go-dockerclient"
 	"github.com/pkg/errors"
 )

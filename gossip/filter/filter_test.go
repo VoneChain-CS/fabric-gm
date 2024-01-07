@@ -9,9 +9,9 @@ package filter
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
+	"github.com/hyperledger/fabric/gossip/comm"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/discovery"
 	"github.com/stretchr/testify/assert"
 )
 

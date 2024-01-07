@@ -11,12 +11,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/comm"
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
-	"github.com/VoneChain-CS/fabric-gm/gossip/discovery"
-	"github.com/VoneChain-CS/fabric-gm/gossip/election"
-	"github.com/VoneChain-CS/fabric-gm/gossip/gossip/algo"
-	"github.com/VoneChain-CS/fabric-gm/gossip/util"
+	"github.com/hyperledger/fabric/gossip/comm"
+	"github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/gossip/election"
+	"github.com/hyperledger/fabric/gossip/gossip/algo"
+	"github.com/hyperledger/fabric/gossip/util"
 	"github.com/spf13/viper"
 )
 

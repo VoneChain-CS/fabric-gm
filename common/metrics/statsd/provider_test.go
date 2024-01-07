@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-gm/common/metrics"
-	"github.com/VoneChain-CS/fabric-gm/common/metrics/statsd"
+	"github.com/hyperledger/fabric/common/metrics"
+	"github.com/hyperledger/fabric/common/metrics/statsd"
 	kitstatsd "github.com/go-kit/kit/metrics/statsd"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

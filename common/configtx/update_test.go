@@ -11,8 +11,8 @@ import (
 	"reflect"
 	"testing"
 
-	mockpolicies "github.com/VoneChain-CS/fabric-gm/common/configtx/mock"
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
+	mockpolicies "github.com/hyperledger/fabric/common/configtx/mock"
+	"github.com/hyperledger/fabric/common/policies"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	"github.com/stretchr/testify/assert"
 )

@@ -10,7 +10,7 @@ import (
 	fmt "fmt"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/core/ledger/kvledger/bookkeeping"
+	"github.com/hyperledger/fabric/core/ledger/kvledger/bookkeeping"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"

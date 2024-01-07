@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package api
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/gossip/common"
+	"github.com/hyperledger/fabric/gossip/common"
 )
 
 //go:generate mockery -dir . -name SecurityAdvisor -case underscore -output mocks/

@@ -14,9 +14,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/bccsp/factory"
-	"github.com/VoneChain-CS/fabric-gm/core/config/configtest"
-	"github.com/VoneChain-CS/fabric-gm/internal/configtxgen/genesisconfig"
+	"github.com/hyperledger/fabric/bccsp/factory"
+	"github.com/hyperledger/fabric/core/config/configtest"
+	"github.com/hyperledger/fabric/internal/configtxgen/genesisconfig"
 	"github.com/stretchr/testify/assert"
 )
 

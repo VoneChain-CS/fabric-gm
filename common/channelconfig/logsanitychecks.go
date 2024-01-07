@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package channelconfig
 
 import (
-	"github.com/VoneChain-CS/fabric-gm/common/policies"
+	"github.com/hyperledger/fabric/common/policies"
 )
 
 func LogSanityChecks(res Resources) {

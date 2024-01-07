@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-gm/gossip/protoext"
-	"github.com/VoneChain-CS/fabric-gm/protoutil"
+	"github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/hyperledger/fabric/protoutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/gossip"
 	"github.com/stretchr/testify/assert"
