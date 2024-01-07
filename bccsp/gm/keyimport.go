@@ -205,26 +205,4 @@ func (ki *x509PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bc
 	default:
 		return nil, errors.New("Certificate's public key type not recognized. Supported keys: [GMSM2]")
 	}
-
-	// return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2PublicKeyImportOpts{})].KeyImport(
-	// 	pk,
-	// 	&bccsp.SM2PublicKeyImportOpts{Temporary:opts.Ephemeral()})
-
-	// switch pk.(type) {
-	// case *sm2.PublicKey:
-
-	// 	ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2PublicKeyImportOpts{})].KeyImport(
-	// 		pk,
-	// 		&bccsp.SM2PublicKeyImportOpts{Temporary:opts.Ephemeral()})
-
-	// 	// return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2PublicKeyImportOpts{})].KeyImport(
-	// 	// 	pk,
-	// 	// 	&bccsp.SM2PublicKeyImportOpts{Temporary: opts.Ephemeral()})
-	// // case *rsa.PublicKey:
-	// // 	return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.RSAGoPublicKeyImportOpts{})].KeyImport(
-	// // 		pk,
-	// // 		&bccsp.RSAGoPublicKeyImportOpts{Temporary: opts.Ephemeral()})
-	// default:
-	// 	return nil, errors.New("Certificate's public key type not recognized. Supported keys: [ECDSA, RSA]")
-	// }
 }
