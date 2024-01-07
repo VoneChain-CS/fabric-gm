@@ -60,19 +60,19 @@ func (*SM2PrivateKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccsp
 	// 	return nil, fmt.Errorf("Failed converting PKIX to GMSM2 public key [%s]", err)
 	// }
 
-	// gmsm2SK, ok := lowLevelKey.(*sm2.PrivateKey)
+	// SM2SK, ok := lowLevelKey.(*sm2.PrivateKey)
 	// if !ok {
 	// 	return nil, errors.New("Failed casting to GMSM2 private key. Invalid raw material.")
 	// }
 
-	//gmsm2SK, err :=  sm2.ParseSM2PrivateKey(der)
-	gmsm2SK, err := sm2.ParsePKCS8UnecryptedPrivateKey(der)
+	//SM2SK, err :=  sm2.ParseSM2PrivateKey(der)
+	SM2SK, err := sm2.ParsePKCS8UnecryptedPrivateKey(der)
 
 	if err != nil {
 		return nil, fmt.Errorf("Failed converting to GMSM2 private key [%s]", err)
 	}
 
-	return &SM2PrivateKey{gmsm2SK}, nil
+	return &SM2PrivateKey{SM2SK}, nil
 }
 
 type SM2PublicKeyImportOptsKeyImporter struct{}
@@ -92,17 +92,17 @@ func (*SM2PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.
 	// 	return nil, fmt.Errorf("Failed converting PKIX to GMSM2 public key [%s]", err)
 	// }
 
-	// gmsm2SK, ok := lowLevelKey.(*sm2.PrivateKey)
+	// SM2SK, ok := lowLevelKey.(*sm2.PrivateKey)
 	// if !ok {
 	// 	return nil, errors.New("Failed casting to GMSM2 private key. Invalid raw material.")
 	// }
 
-	gmsm2SK, err := sm2.ParseSm2PublicKey(der)
+	SM2SK, err := sm2.ParseSm2PublicKey(der)
 	if err != nil {
 		return nil, fmt.Errorf("Failed converting to GMSM2 public key [%s]", err)
 	}
 
-	return &SM2PublicKey{gmsm2SK}, nil
+	return &SM2PublicKey{SM2SK}, nil
 }
 
 type x509PublicKeyImportOptsKeyImporter struct {

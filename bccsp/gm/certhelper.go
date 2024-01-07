@@ -25,36 +25,6 @@ import (
 	"github.com/tjfoc/gmsm/sm2"
 )
 
-// //调用SM2接口生成SM2证书
-// func CreateCertificateToMem(template, parent *x509.Certificate,key bccsp.Key) (cert []byte,err error) {
-// 	pk := key.(*SM2PrivateKey).privKey
-// 	bigint := getRandBigInt()
-// 	if(template.SerialNumber == nil){
-// 		template.SerialNumber = bigint
-// 	}
-// 	if parent.SerialNumber == nil{
-// 		parent.SerialNumber = bigint
-// 	}
-
-// 	sm2Temcert := ParseX509CertificateToSm2(template)
-// 	sm2Parcert := ParseX509CertificateToSm2(parent)
-// 	switch template.PublicKey.(type){
-// 	case sm2.PublicKey:
-// 		cert, err = sm2.CreateCertificateToMem(sm2Temcert,sm2Parcert, template.PublicKey.(*sm2.PublicKey),pk)
-// 		return
-// 	default:
-// 		return nil ,fmt.Errorf("gm certhelper not sm2.PublicKey")
-// 	}
-// }
-
-// //调用SM2接口生成SM2证书请求
-// func CreateCertificateRequestToMem(certificateRequest *x509.CertificateRequest,key bccsp.Key) (csr []byte,err error) {
-// 	pk := key.(*SM2PrivateKey).privKey
-// 	sm2Req := ParseX509CertificateRequestToSm2(certificateRequest)
-// 	csr,err = sm2.CreateCertificateRequestToMem(sm2Req,pk)
-// 	return
-// }
-
 //调用SM2接口生成SM2证书
 func CreateCertificateToMem(template, parent *sm2.Certificate, key bccsp.Key) (cert []byte, err error) {
 	pk := key.(*SM2PrivateKey).privKey

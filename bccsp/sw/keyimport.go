@@ -174,13 +174,13 @@ func (*SM2PrivateKeyOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyIm
 		return nil, errors.New("Invalid raw material, It must botbe nil")
 	}
 
-	gmsm2SK, err := sm2.ParsePKCS8UnecryptedPrivateKey(der)
+	SM2SK, err := sm2.ParsePKCS8UnecryptedPrivateKey(der)
 
 	if err != nil {
 		return nil, fmt.Errorf("Failed converting to GMSM2 private key [%s]", err)
 	}
 
-	return &SM2PrivateKey{gmsm2SK}, nil
+	return &SM2PrivateKey{SM2SK}, nil
 }
 
 type SM2PublicKeyOptsKeyImporter struct{}
@@ -195,11 +195,11 @@ func (*SM2PublicKeyOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyImp
 		return nil, errors.New("Invalid raw material, It must botbe nil")
 	}
 
-	gmsm2SK, err := sm2.ParseSm2PublicKey(der)
+	SM2SK, err := sm2.ParseSm2PublicKey(der)
 
 	if err != nil {
 		return nil, fmt.Errorf("Failed converting to GMSM2 private key [%s]", err)
 	}
 
-	return &SM2PublicKey{gmsm2SK}, nil
+	return &SM2PublicKey{SM2SK}, nil
 }

@@ -250,7 +250,7 @@ func NewCA(
 		errors.Errorf("error,%v", err)
 	}
 	templateSm2.SignatureAlgorithm = sm2.SM2WithSM3  //指定证书的签名算法
-	sm2Cert, err := genCertificateGMSM2(
+	sm2Cert, err := genCertificateSM2(
 		baseDir,
 		name,
 		templateSm2,

@@ -729,7 +729,7 @@ func printVersion() {
 func getCA(caDir string, spec OrgSpec, name string) *ca.CA {
 	//TODO
 	priv, _ := csp.LoadPrivateKey(caDir)
-	cert, _ := ca.LoadCertificateGMSM2(caDir)
+	cert, _ := ca.LoadCertificateSM2(caDir)
 
 	return &ca.CA{
 		Name:               name,

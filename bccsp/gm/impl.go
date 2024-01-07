@@ -288,8 +288,7 @@ func (csp *impl) GetHash(opts bccsp.HashOpts) (h hash.Hash, err error) {
 	return
 }
 
-//根据签名者选项opts，使用k对digest进行签名，注意如果需要对一个特别大的消息的hash值
-//进行签名，调用者则负责对该特别大的消息进行hash后将其作为digest传入
+//根据签名者选项opts，使用k对digest进行签名
 func (csp *impl) Sign(k bccsp.Key, digest []byte, opts bccsp.SignerOpts) (signature []byte, err error) {
 	// Validate arguments
 	if k == nil {

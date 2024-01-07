@@ -124,7 +124,7 @@ func SM2Sign(k *sm2.PrivateKey, digest []byte) (signature []byte, err error) {
 		return nil, err
 	}
 
-	return marshalGMSM2Signature(r, s)
+	return marshalSM2Signature(r, s)
 }
 
 func signECDSA(k *ecdsa.PrivateKey, digest []byte) (signature []byte, err error) {
@@ -145,7 +145,7 @@ func marshalECDSASignature(r, s *big.Int) ([]byte, error) {
 	return asn1.Marshal(ECDSASignature{r, s})
 }
 
-func marshalGMSM2Signature(r, s *big.Int) ([]byte, error) {
+func marshalSM2Signature(r, s *big.Int) ([]byte, error) {
 	return asn1.Marshal(ECDSASignature{r, s})
 }
 

@@ -31,11 +31,11 @@ type config struct {
 }
 
 func (conf *config) setSecurityLevel(securityLevel int, hashFamily string) (err error) {
-	err = conf.setSecurityLevelSM3(securityLevel)
+	err = conf.SM3setSecurityLevel(securityLevel)
 	return
 }
 
-func (conf *config) setSecurityLevelSM3(level int) (err error) {
+func (conf *config) SM3setSecurityLevel(level int) (err error) {
 	switch level {
 	case 256:
 		conf.ellipticCurve = elliptic.P256()

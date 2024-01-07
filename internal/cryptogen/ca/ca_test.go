@@ -81,7 +81,7 @@ func TestLoadCertificateECDSA(t *testing.T) {
 		cert.KeyUsage)
 	assert.Contains(t, cert.ExtKeyUsage, sm2.ExtKeyUsageAny)
 
-	loadedCert, err := ca.LoadCertificateGMSM2(certDir)
+	loadedCert, err := ca.LoadCertificateSM2(certDir)
 	assert.NoError(t, err)
 	assert.NotNil(t, loadedCert, "Should load cert")
 	assert.Equal(t, cert.SerialNumber, loadedCert.SerialNumber, "Should have same serial number")

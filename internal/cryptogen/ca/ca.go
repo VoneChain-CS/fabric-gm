@@ -92,7 +92,7 @@ func NewCA(
 		errors.Errorf("error,%v", err)
 	}
 	templateSm2.SignatureAlgorithm = sm2.SM2WithSM3
-	sm2Cert, err := genCertificateGMSM2(
+	sm2Cert, err := genCertificateSM2(
 		baseDir,
 		name,
 		templateSm2,
@@ -164,7 +164,7 @@ func (ca *CA) SignCertificate(
 	template.PublicKey = pub
 	templateSm2 := gm.ParseX509CertificateToSm2(&template)
 	templateSm2.SignatureAlgorithm = sm2.SM2WithSM3
-	cert, err := genCertificateGMSM2(
+	cert, err := genCertificateSM2(
 		baseDir,
 		name,
 		templateSm2,
@@ -292,47 +292,9 @@ func genCertificateECDSA(
 	return x509Cert, nil
 }
 
-//generate a signed X509 certficate using GMSM2
-func genCertificateGMSM21(
-	baseDir,
-	name string,
-	template, parent *sm2.Certificate,
-	pub *sm2.PublicKey,
-	key bccsp.Key) (*sm2.Certificate, error) {
-	//create the x509 public cert
-	certBytes, err := gm.CreateCertificateToMem(template, parent, key)
-
-	if err != nil {
-		return nil, err
-	}
-
-	//write cert out to file
-	fileName := filepath.Join(baseDir, name+"-cert.pem")
-	err = ioutil.WriteFile(fileName, certBytes, os.FileMode(0666))
-
-	// certFile, err := os.Create(fileName)
-	if err != nil {
-		return nil, err
-	}
-
-	// //pem encode the cert
-	// err = pem.Encode(certFile, &pem.Block{Type: "CERTIFICATE", Bytes: certBytes})
-	// certFile.Close()
-	// if err != nil {
-	// 	return nil, err
-	// }
-	//x509Cert, err := sm2.ReadCertificateFromPem(fileName)
-
-	x509Cert, err := sm2.ReadCertificateFromMem(certBytes)
-	if err != nil {
-		return nil, err
-	}
-	return x509Cert, nil
-
-}
 
 // TODO generate a signed sm2 certificate using SM2
-func genCertificateGMSM2(
+func genCertificateSM2(
 	baseDir,
 	name string,
 	template,
@@ -398,8 +360,8 @@ func LoadCertificateECDSA(certPath string) (*x509.Certificate, error) {
 	return cert, err
 }
 
-// LoadCertificateGMSM2 load a ecdsa cert from a file in cert path
-func LoadCertificateGMSM2(certPath string) (*sm2.Certificate, error) {
+// LoadCertificateSM2 load a ecdsa cert from a file in cert path
+func LoadCertificateSM2(certPath string) (*sm2.Certificate, error) {
 	var cert *sm2.Certificate
 	var err error
 

@@ -56,19 +56,20 @@ func UnmarshalSM2Signature(raw []byte) (*big.Int, *big.Int, error) {
 		return nil, nil, fmt.Errorf("Failed unmashalling signature [%s]", err)
 	}
 
-	// Validate sig
-	if sig.R == nil {
-		return nil, nil, errors.New("Invalid signature. R must be different from nil.")
-	}
 	if sig.S == nil {
 		return nil, nil, errors.New("Invalid signature. S must be different from nil.")
 	}
 
-	if sig.R.Sign() != 1 {
-		return nil, nil, errors.New("Invalid signature. R must be larger than zero")
+	if sig.R == nil {
+		return nil, nil, errors.New("Invalid signature. R must be different from nil.")
 	}
+	
 	if sig.S.Sign() != 1 {
 		return nil, nil, errors.New("Invalid signature. S must be larger than zero")
+	}
+
+	if sig.R.Sign() != 1 {
+		return nil, nil, errors.New("Invalid signature. R must be larger than zero")
 	}
 
 	return sig.R, sig.S, nil
