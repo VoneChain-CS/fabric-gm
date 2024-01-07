@@ -242,7 +242,7 @@ func NewCA(
 	subject.Organization = []string{org}
 	subject.CommonName = name
 	template.Subject = subject
-	templateSm2 := gm.ParseX509Certificate2Sm2(&template)
+	templateSm2 := gm.ParseX509CertificateToSm2(&template)
 	//TODO important
 	templateSm2.SubjectKeyId = computeSKI(priv)  //指定证书的SKI
 	sm2PubKey := priv.PublicKey

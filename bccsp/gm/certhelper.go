@@ -36,8 +36,8 @@ import (
 // 		parent.SerialNumber = bigint
 // 	}
 
-// 	sm2Temcert := ParseX509Certificate2Sm2(template)
-// 	sm2Parcert := ParseX509Certificate2Sm2(parent)
+// 	sm2Temcert := ParseX509CertificateToSm2(template)
+// 	sm2Parcert := ParseX509CertificateToSm2(parent)
 // 	switch template.PublicKey.(type){
 // 	case sm2.PublicKey:
 // 		cert, err = sm2.CreateCertificateToMem(sm2Temcert,sm2Parcert, template.PublicKey.(*sm2.PublicKey),pk)
@@ -50,7 +50,7 @@ import (
 // //调用SM2接口生成SM2证书请求
 // func CreateCertificateRequestToMem(certificateRequest *x509.CertificateRequest,key bccsp.Key) (csr []byte,err error) {
 // 	pk := key.(*SM2PrivateKey).privKey
-// 	sm2Req := ParseX509CertificateRequest2Sm2(certificateRequest)
+// 	sm2Req := ParseX509CertificateRequestToSm2(certificateRequest)
 // 	csr,err = sm2.CreateCertificateRequestToMem(sm2Req,pk)
 // 	return
 // }
@@ -80,7 +80,7 @@ func CreateSm2CertificateRequestToMem(certificateRequest *sm2.CertificateRequest
 }
 
 // X509 证书请求转换 SM2证书请求
-func ParseX509CertificateRequest2Sm2(x509req *x509.CertificateRequest) *sm2.CertificateRequest {
+func ParseX509CertificateRequestToSm2(x509req *x509.CertificateRequest) *sm2.CertificateRequest {
 	sm2req := &sm2.CertificateRequest{
 		Raw:                      x509req.Raw,                      // Complete ASN.1 DER content (CSR, signature algorithm and signature).
 		RawTBSCertificateRequest: x509req.RawTBSCertificateRequest, // Certificate request info part of raw ASN.1 DER content.
@@ -122,7 +122,7 @@ func ParseX509CertificateRequest2Sm2(x509req *x509.CertificateRequest) *sm2.Cert
 }
 
 // X509证书格式转换为 SM2证书格式
-func ParseX509Certificate2Sm2(x509Cert *x509.Certificate) *sm2.Certificate {
+func ParseX509CertificateToSm2(x509Cert *x509.Certificate) *sm2.Certificate {
 	sm2cert := &sm2.Certificate{
 		Raw:                     x509Cert.Raw,
 		RawTBSCertificate:       x509Cert.RawTBSCertificate,
@@ -191,7 +191,7 @@ func ParseX509Certificate2Sm2(x509Cert *x509.Certificate) *sm2.Certificate {
 }
 
 //sm2 证书转换 x509 证书
-func ParseSm2Certificate2X509(sm2Cert *sm2.Certificate) *x509.Certificate {
+func ParseSm2CertificateToX509(sm2Cert *sm2.Certificate) *x509.Certificate {
 	if sm2Cert == nil {
 		return nil
 	}
